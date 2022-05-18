@@ -1,0 +1,55 @@
+5/16
+
+<div id="상우" class="최 상우" style="color:#ff0;">01</div>
+
+style="color:#ff0;" > div id="상우" > class="최 상우
+
+확장에서 Auto Rename Tag설치
+
+inherit : 브라우저가 원래 가지고 있는 폰트사이즈. 보통 16px 
+figure : 이미지 넣을 때 씀 
+a, strong, em(기울기),글자의 스타일 관여하는 것들 -> inline
+header,nav,main,footer -> 시멘틱(의미있는) 태그
+section : 큰박스라 생각하기
+
+-------------------------------------------------------------------------
+5/17
+
+리엑터 - 제이쿼리 별로 사용 안함, 라이브러리의 일종
+
+display : block, none, inline, flex
+display - 현상 position - 어디에
+경로  ./ 나의 형제 레벨  ../ 나의 부모 레벨
+
+주석 단축키 
+ctrl + /
+ctrl + alt + A
+
+상대경로 절대경로, target에 대해 
+
+css 파일 빼놓는거 -> '모듈화한다'
+
+width: 50%; -> 부모 넓이에서의 50%
+
+auto 는 자연스러운 값, % 는 부모의 값에대한 %
+auto와 100%는 다름
+
+상우하좌
+
+박스 사이즈가 있을 때 margin : 0 auto 가운데로오게함
+
+strong태그(박스가 아니기 떄문에)  - margin 좌우만 먹음.
+                                          - padding 좌우만!! 먹음. 상하는 먹는거 처럼 보임(하지만 실제는 공간차지하지 않음)
+
+설정 -> save 검색 -> format  on save 체크
+
+반응형 
+max-width: 1200px;
+width: 100%;
+
+
+
+
+
+
+

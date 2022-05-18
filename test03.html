@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test02</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: inherit;
+            /* inherit : 브라우저가 원래 가지고 있는 폰트사이즈. 보통 16px */
+            font-weight: inherit;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        .box {
+            background: #ddd;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .box h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .box p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .box .container {
+            display: flex;
+            gap: 30px;
+            width: 1200px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            background: #ff0;
+        }
+
+        .box figure {
+            background: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>제목</h1>
+    <section class="box">
+        <!-- section 큰박스라 생각하기 -->
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vitae ad officiirs?
+        </p>
+        <div class="container">
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi sit quidem vero eav.
+            </figure>
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi sit quidem vero eav.
+            </figure>
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi sit quidem vero eav.
+            </figure>
+        </div>
+    </section>
+</body>
+
+</html>
