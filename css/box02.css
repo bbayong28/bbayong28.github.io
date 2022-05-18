@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 30px auto;
+    width: 600px;
+    border: 1px solid #333;
+}
+
+.box01 {
+    margin: 40px auto;
+    background: #ff0;
+}
+
+.box02 {
+    padding: 30px;
+    background: #f00;
+}
+
+.box03 {
+    /* inline 인 strong 태그를 display: block를 쓰므로 박스로 바꿈 */
+    display: block;
+    margin: 100px auto;
+    padding: 100px 30px;
+}
