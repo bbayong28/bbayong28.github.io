@@ -1,0 +1,16 @@
+.popup {
+    /* position: absolute; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 350px;
+    background: #00f;
+}
+
+.popup button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
