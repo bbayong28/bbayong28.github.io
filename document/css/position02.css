@@ -1,5 +1,5 @@
 body {
-    background: #333;
+    background: lightpink;
 }
 
 nav {
@@ -8,8 +8,13 @@ nav {
     left: -500px;
     width: 500px;
     height: 100vh;
-    background: #fff;
+    background: lightcoral;
     transition: .5s;
+}
+
+nav li {    
+    color: white;
+    margin-bottom: 15px;
 }
 
 nav.oo {
@@ -22,7 +27,7 @@ nav.oo {
     right: 30px;
     width: 30px;
     height: 30px;
-    background: #ddd;
+    background: lavenderblush;
     cursor: pointer;
 }
 
@@ -32,7 +37,7 @@ nav.oo {
     left: 5px;
     right: 5px;
     height: 3px;
-    background: #f00;
+    background: #333;
     transition: .5s;
 }
 
