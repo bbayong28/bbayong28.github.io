@@ -39,13 +39,116 @@ auto와 100%는 다름
 박스 사이즈가 있을 때 margin : 0 auto 가운데로오게함
 
 strong태그(박스가 아니기 떄문에)  - margin 좌우만 먹음.
-                                          - padding 좌우만!! 먹음. 상하는 먹는거 처럼 보임(하지만 실제는 공간차지하지 않음)
+                                               - padding 좌우만!! 먹음. 상하는 먹는거 처럼 보임(하지만 실제는 공간차지하지 않음)
 
 설정 -> save 검색 -> format  on save 체크
 
 반응형 
 max-width: 1200px;
 width: 100%;
+
+-------------------------------------------------------------------------
+5/18
+깃허브, display - flex
+-------------------------------------------------------------------------
+5/19
+프론트 + 디자인 + 백엔드는 덤
+디자인 - 자세하게 말고 쓸 정도만
+
+가로배열 - display - flex
+display - none (기본값), inline(잘안씀), block(나타나라), box,inline-block{box 속성 + inline속성(가로배열, 띄어쓰기, vertical align)}
+none<->block  none<->flex  block<->inline
+
+겹침 - position- absolute
+position(어디에, 좌표를 가진다) - static(none과 비슷, position이 아니게함. 좌표를 안가짐), relative(기준), fixed(absolute랑 비슷하지만 기준이 없음 viewport만 기준으로 생각함. 그래서 화면 넘쳐도 스크롤 바가 안생김.)
+                                              absolute(좌표를 가짐. 떠오른다, 쪼그라든다, 기준이 없다(부모, 조상 등등 기준 무시 body가 기준이 됨), 겹쳐놓을때, 떠오름 html 상에서는 자식이지만 떠오르면서 width, height값이 없어짐?, top lefft bottom right 상우하좌 얼만큼 떨어지는지 값)
+
+float(가로배열) 글자와 그림사이에 관여
+
+position 블록 인라이요소 차이 중요
+css 스타일 배경이미지 적용 중요
+
+
+position 
+
+transform은 레이아웃을 안깬다
+박스를 띄워서 가운데 오게 하는것 공식!
+position: absolute; 는 꼭 부모가 있을때!
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+index - 번호 
+
+document.querySelector('.popup button').addEventListener('click', function(){})
+                                                                                이벤트    할일
+
+
+이벤트는 정해져있어서 외워야함.(클릭 스크롤 이벤트 휠이벤트 포커스 )
+휠이벤트는 마우스 휠움직이는거 
+마우스올리고 내리고 - hover
+자바보다 제이쿼리가 쉽고 리엑트가 더 쉽다
+but 리엑트 진입장벽이 어렵다
+
+
+vh(viewport height) 화면 높이
+
+nav.on(nav에 on이 붙었을때)
+document.querySelector('.mopen').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('oo')
+        })
+
+add 열기만 가능
+toggle 열고 닫기 가능
+https://bbayong28.github.io/document/
+
+cursor:pointer;
+-------------------------------------------------------------------------
+5/20
+:hover
+::after
+::before
+position에대한 이해를 높이기 위해 
+
+script의 위치
+head 안에 써도되고 body안에 써도 되고 바디 박에 써도는데
+
+실무에서는 head 에 써라고 많이함 (안먹을 때 defer 씀)
+body내용 안 마지막 
+body내용 밖은 에러뜨는데가 있음
+
+
+head 안에 script 쓰더라도 구현되게 하는방법
+1. 자바스크립트안에 window.addEventListener('DOMContentLoaded', function () { })쓰기!!!!  
+    DOMContentLoaded가 다 실행 됐을 때 적용 되어라는 내용임. 
+2. head 안 script 연결에 defer 쓰기
+   <script src="../js/position03.js" defer></script>
+max-width: 100%; 자기의 100%유지
+
+1분코딩 - flex
+https://studiomeal.com/archives/197
+
+gap 익스안돌아감
+transform 레이아웃을 안깨는 성질이 있음.
+
+웹 아이콘  -XEICON(네이버 관리 아이콘) - 폰트어썸(4버전까지 무료/서양에서 만든거라 디자인이 샤프하지않음)  - 부트스트랩
+
+cdn(Content Delivery Network) - 공짜로 어디에든 존재하는 소스, 
+보통 홈펨이지 만들때 폰트는 가장 인기있는 종류 하나,더하고 싶으면 2-3개까지 왜냐면 끌어오면 로딩시간 오래걸림.
+
+라이센스 중요!  대경스틸 이미지 포폴에 올려놓으면 걸림.
+구글웹폰트 - 라이센스프리 공짜.     나눔 명조 나눔고딕(네이버꺼)
+100~900까지 플러스하고 import가서 <style></style> 사이복사해서 reset이나 css파일 맨위에 붙이기 body만들고 그 밑에꺼 복사해서 붙이기
+noto sans Korean - 홀수가 이쁨
+
+font-weight 100(thin) 300(light) 400(regular) 500(medium) 700(bold) 900(black)
+
+
+
+
+
+ 
 
 
 

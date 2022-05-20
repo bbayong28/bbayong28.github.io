@@ -12,7 +12,7 @@ nav {
     transition: .5s;
 }
 
-nav li {    
+nav li {
     color: white;
     margin-bottom: 15px;
 }
@@ -67,10 +67,6 @@ nav.oo {
 
 .mopen.oo span:nth-child(3) {
     transform: rotate(-45deg);
-}
-
-.mopen span:nth-child(4) {
-    top: 20px;
 }
 
 /* 
