@@ -3,7 +3,12 @@ body {
 }
 
 h1 {
-    color: red;
+    color:#1E82FF;
+}
+div{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
 }
 
 .box00 {
@@ -21,7 +26,7 @@ h1 {
 .box02 {
     margin-left: 100px;
     width: 100%;
-    background: #ff0;
+    background: #00f;
 }
 
 .box03 {

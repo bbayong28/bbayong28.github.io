@@ -6,7 +6,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#event {
+#event{
     padding: 100px 0;
     text-align: center;
 }
@@ -96,4 +96,82 @@ body {
 
 #event figure:hover a {
     top: 0;
+}
+
+
+
+
+
+
+
+#self{
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+#self h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 10px 0px;
+}
+#self h2::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: rgb(246, 139, 82);
+    margin: 20px auto;
+} 
+
+#self p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0px;
+    line-height: 1.4;
+}
+#self p::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50px;
+    background: rgb(246, 139, 82);
+    margin: 20px auto;
+} 
+
+#self .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#self img {
+    max-width: 100%;
+    /* 부모에 상속받은 값1200px의 100% */
+    transition: 0.5s;
+
+}
+
+#self figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+#self .container figure:hover img {
+    transform: scale(1.5);
+}
+
+#self figure a {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+#self figure:hover a {
+    bottom: 0;
 }

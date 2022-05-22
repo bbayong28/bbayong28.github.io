@@ -1,16 +1,26 @@
 h1 {
     line-height: 100px;
-    background: rgb(252, 191, 238);
+    background: #FFB0D9;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;    
+    font-weight: bold;
+    line-height: 100px;
+    background: #D2D2FF;
 }
 
 nav {
     line-height: 100px;
-    background: rgb(252, 145, 229);
+    background: #B4E5FF;
 }
 
 .right {
     line-height: 100px;
-    background: rgb(251, 54, 242);
+    background:#68D168;
+}
+div {
+    line-height: 100px;
 }
 
 .header01 {
@@ -40,9 +50,58 @@ nav {
     margin: 0 0 0 auto;
 }
 
+
+
+.header06 {
+    display: flex;
+    justify-content: flex-start;
+}
+.a{
+    background:#FF5675 ;
+}
+.b{
+    background:#FFA374 ;
+}
+.c{
+    font-size: 25px;
+    font-weight: bold;
+}
+.d{
+    background:#FFDC3C ;
+}
+.e{
+    background:#52E252 ;
+}
 .basic {
     line-height: 100px;
 }
+
+.header07{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header08{
+    display: flex;
+    justify-content:center;
+
+}
+.header09{
+    display: flex;
+    justify-content: space-around;
+
+}
+.header10{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header11{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 
 .basic .container {
     display: flex;

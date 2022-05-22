@@ -4,9 +4,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 3px solid #6e6e6e;
     width: 450px;
     height: 350px;
-    background: #00f;
+    background: #FFD9E4;
+    opacity: .9;
+}
+
+.popup p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .popup button {
