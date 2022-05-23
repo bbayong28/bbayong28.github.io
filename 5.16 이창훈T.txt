@@ -142,13 +142,70 @@ cdn(Content Delivery Network) - 공짜로 어디에든 존재하는 소스,
 100~900까지 플러스하고 import가서 <style></style> 사이복사해서 reset이나 css파일 맨위에 붙이기 body만들고 그 밑에꺼 복사해서 붙이기
 noto sans Korean - 홀수가 이쁨
 
-font-weight 100(thin) 300(light) 400(regular) 500(medium) 700(bold) 900(black)
+note sans font-weight 100(thin) 300(light) 400(regular) 500(medium) 700(bold) 900(black)
 
 
+-------------------------------------------------------------------------
+5/23
+5-6개월해도 자바스크립트 모를 수 있음. 그래도 기초는 되야함.
+
+px 
+em 정해진폰트크기의 배수(정해진 폰트 크기 없다면 기본 16px)
+rem html 최상위에서 정해둔 폰트 사이즈의 배수(보통 1rem은 16px)
+기본 폰트 - 맑은고딕임
 
 
+css 젤 위에 @charset "utf-8"; 적으면 css 주석들이 페이지소스보기에서 보임
 
- 
+
+제이쿼리ㅏㄹ는 라이브러리가 도입되어야 slick을 쓸 수 있음.
+https://kenwheeler.github.io/slick/-> get it now -> download now, view on github 무시하고 밑에 상자에 위에 slick.css 주소 다른이름으로 링크저장해서 css 파일안에 저장->
+slick.min.js 다른이름으로 링크저장해서 js 파일에 넣으면됨
+
+jquery cdn검색 ->https://releases.jquery.com/ ->Query 1.x을 많이씀 인터넷 익스플로어 돌아가서.->jQuery 1.x
+jQuery Core 1.12.4 - uncompressed, minified->minified 오른쪽 마우스 누르고 다른이름이로 링크저장해서 js 파일에 넣기
+라이브러리 : 자유도가 많음
+framework : 만들어진 틀 자유도가 적음 - 만든사람의 법칙에 맞게 구겨넣어야 함.
+
+
+$(function () {
+    $('h1').hide()
+}) 
+
+function 으로 감싸줘야 위에(head에) 써도 실행됨.
+
+
+$('h1').hide() <- 제이쿼리 메소드라고 부름!
+slick 다운받으면 document.querySelector('h1').style.display = 'none'; 이 긴 문장을
+$('h1').hide() 이렇게 간단히 쓰면 실행 됨.
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+제이쿼리 파일 아래에 내가 만들 자바스크립트 사이에 slick.min.js 파일 넣음
+리셋 파일 아래에 내가 만들 css 사이에 slick.css 파일 넣음
+
+class 네이밍 시, 숫자가 먼저 오면 안됨, 정석은 하이픈(-)인데 더블클릭하면 한번에 선택이 안됨. 그래서 음절 앞 대문자쓰거나(카멜표기볍) 언더바(_) 많이씀(ooo 표기법)
+
+이미지 같은거 써도 흑백인거 쓰고싶으면 포토샵가공해서 다시저장해서쓰며 트래픽 잡아먹으니까 그냥 있는 파일에 css로 흑백 만들어주는게 트래픽 덜 잡ㅂ아먹음
+
+<main role="main"></main> role="main인터넷익스플로어 돌아가게 하고싶을때 적어줌
+
+header main footer - 기억하기
+main 의 가장자리에 쓰는 제일 큰 박스  section
+section은 이름을 붙여주는게 룰이다!!!
+
+margin은 background를 포함하지 못하고 마진겹침 현상이 있어서 padding으로 줌.
+
+ppsition dislplay width... font관련... css 순서! 
+
+상  하  좌  우
+상  좌우  하
+상하  좌우
 
 
 
