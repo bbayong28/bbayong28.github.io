@@ -8,6 +8,7 @@
     <title>position 01</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/position01.css">
+    <script src="../../trn01/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -145,7 +146,7 @@
         quaerat? Dolores magnam aspernatur quidem qui sed explicabo quas nisi veritatis. Fugiat facilis cupiditate iure!
         Enim similique expedita incidunt labore, laboriosam odit ducimus, minima aliquid atque, ut ex ullam animi illo
         quam quasi quo consectetur harum dolorem asperiores corporis iusto deleniti doloribus. Fuga aspernatur culpa
-        distinctio, alias, esse non illo perferendis architecto minima saepe fugit voluptate sit inventore id a ex
+        distinctio, alias, esse non illo perferloloendis architecto minima saepe fugit voluptate sit inventore id a ex
         facilis neque. Officia exercitationem, explicabo, sunt nostrum accusantium ea assumenda consequatur fugiat
         commodi, odit error odio placeat culpa ducimus cupiditate.
     </main>
@@ -154,10 +155,16 @@
         <button>close</button>
     </div>
     <script>
+        /* 
+        $('.popup button').click(function () {
+            $('.popup').fadeOut(200);
+        }); 
+        */
+
         document.querySelector('.popup button').addEventListener('click', function () {
             console.log('바부팅');
             document.querySelector('.popup').style.display = 'none';
-        })
+        }) 
     </script>
 </body>
 

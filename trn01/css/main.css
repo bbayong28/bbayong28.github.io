@@ -1,34 +1,133 @@
-.content {
-    padding: 100px 0;
+:root {
+    --mc: #dc3545;
+    --gc: #dddddd;
+    --wc: #f8f9fa;
+    --dc: #000000;
 }
 
-.content .container {
+html {
+    font-size: 20px;
+
+}
+
+body {
+    font-size: 0.8rem;
+}
+
+.Wrap {}
+
+.top_banner {
+    border-top: 2px solid var(--mc);
+    border-bottom: 1px solid var(--gc);
+    font-size: 0.65rem;
+    line-height: 1.5rem;
+}
+
+.header {
+    line-height: 5rem;
+}
+
+.top_banner .container {
     display: flex;
-    gap: 30px;
+    justify-content: flex-end;
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.top_banner li {
+    border-right: 1px solid #ddd;
+    padding: 0 0.5rem;
+}
+
+.header .container {
+    display: flex;
     width: 1200px;
     margin: 0 auto;
-
 }
 
-.content .container figure {
-    flex: 1;
-
+.header h1 img {
+    width: 300px;
 }
 
-.content img {
-    width: 100%;
-    margin: 0 0 20px 0;
+.header nav {
+    margin: 0 0 0 auto;
 }
 
-.content strong {
+
+
+.header nav>ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.header nav>ul>li {
+    position: relative;
+}
+
+.header nav>ul>li~li::before {
+    content: "";
+    position: absolute;
+    inset: 50% auto auto -1rem;
+    width: 1px;
+    height: 0.6rem;
+    background: var(--gc);
+    transform: translateY(-50%);
+}
+
+/* 메뉴쪽에 부모자식 정확히 해주는게 좋음-> nav>ul ( nav ul 써도 됨 ) */
+
+.header nav>ul a {
     display: block;
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
+    font-size: 0.85rem;
 }
 
-.content p {
-    font-size: 13px;
+.header i {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    background: var(--gc);
+    border-radius: 3px;
+    margin: 0 0 0 1rem;
+    vertical-align: middle;
+}
+
+.main_visual {
+    position: relative;
+
+}
+
+.main_visual .main_slider img {
+    width: 100%;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: right;
+    color: var(--wc);
+    text-shadow: 0 0 2px var(--dc);
+}
+
+.main_visual .slogan h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+}
+
+.main_visual .slogan h2::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 2px;
+    background: var(--wc);
+    margin: 1rem 5px 0 auto;
+}
+
+
+.main_visual .slogan p {
+    font-size: 0.75rem;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
 }

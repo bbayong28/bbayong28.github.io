@@ -8,6 +8,8 @@
     <title>position 02</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/position02.css">
+    <script src="../../trn01/js/jquery-1.12.4.min.js"></script>
+
 </head>
 
 <body>
@@ -28,6 +30,10 @@
         <span></span>
     </div>
     <script>
+        /* $('.mopen').click(function () {
+            $('nav, .mopen').toggleClass('oo');
+        }); */
+
         document.querySelector('.mopen').addEventListener('click', function () {
             document.querySelector('nav').classList.toggle('oo');
             document.querySelector('.mopen').classList.toggle('oo');

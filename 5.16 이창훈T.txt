@@ -143,8 +143,7 @@ cdn(Content Delivery Network) - 공짜로 어디에든 존재하는 소스,
 noto sans Korean - 홀수가 이쁨
 
 note sans font-weight 100(thin) 300(light) 400(regular) 500(medium) 700(bold) 900(black)
-
-
+font-size - 기본 16px 
 -------------------------------------------------------------------------
 5/23
 5-6개월해도 자바스크립트 모를 수 있음. 그래도 기초는 되야함.
@@ -206,6 +205,83 @@ ppsition dislplay width... font관련... css 순서!
 상  하  좌  우
 상  좌우  하
 상하  좌우
+
+line-height: 1.618이 황금비율이지만 선생님 1.4많이씀 포토샵 기본비율은 1.25!
+
+-------------------------------------------------------------------------
+5/24
+
+block - margin,padding상하좌우, height, width 다 가능
+        - 첫 속성이 height가 auto가 아님
+inline - margin,padding 좌우만 가능
+
+가로배열 float(유지보수 시 중요, 모르면 안됨, 사이트하나 만들어 볼꺼다), flex, grid, table
+
+position - static(), relative(기준), absolute(뜬다, 쪼그라든다, block),fixed(별로 쓸일 없음, 포폴만들때는 단골)
+span strong em a -> 글자에 관련된 태그 -> inline요소 -> width,height,margin,padding 쓸 수 없음.
+
+기본, 일반 text - color 거의 안씀(가독성떨어짐)  무채색은 color 아님.
+
+주소창 D:/ 치면 D 드라이브로 감
+
+div가 쌓이면 안좋음
+
+:root 컬러 쓰는 법(익스에서 안돌아감)
+:root { --red: #dc3545;}(:root --mc: #dc3545;}) 를 css위에 적어놓고 원하는 곳에  color: var(--red);(color : var(--mc);) 적으면 됨.
+
+rem쓰는 법
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+.header .top_banner {line-height: 30px;}
+
+보통 이미지는 크게만듦, 작게 보여줌 픽셀때문에
+but 로고는 뭉개지는 현상이 있어서 이미지를 보통 2배로 뻥튀기함.(시안 보내면 320사이즈에 맞추면 이미지640으로 씀.)
+ 
+<!-- a로 레이아웃을 잡지 않음 그래서 div로 감쌈 -->
+
+메뉴쪽에 부모자식 정확히 해주는게 좋음-> nav>ul ( nav ul 써도 됨 )
+.header nav>ul {
+    display: flex;
+}
+
+~은 형제라는 뜻 li~li는 첫 li 자기자신을 뺀 나머지 li
+
+
+vertical-align은 block 에서 안먹음
+
+
+슬릭 옵션
+https://github.com/kenwheeler/slick/
+
+margin  0  auto    position에서 안먹음
+
+
+text-indent:
+
+
+
+신화영_요구사항 확인.pptx
+
+이번주 금요일 27일 오후 6:00 ~  6:50분사이에 카톡으로 제출(시간 엄수 저시간 사이에만!!)
+
+커버(이름이나 주제같은거) 만들고, 좋아하는 사이트 주제(패션 건설 자동차)하나 정해서 사이트 30장
+ 
+내용은 장마다 스크린샷, url 소감 (이홈페이지는 어떤 요구를 받았을까, 주로쓰는 색, 보조로 쓴 색은 뭘까)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
