@@ -1,0 +1,53 @@
+.smile {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: wheat;
+    border-radius: 50%;
+}
+
+.smile li {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-left: 3px solid #333;
+    border-top: 3px solid #333;
+}
+
+.smile li:nth-child(1) {
+    top: 100px;
+    left: 100px;
+    transform: rotate(-135deg);
+}
+
+.smile li:nth-child(2) {
+    top: 100px;
+    right: 100px;
+    transform: rotate(-135deg);
+}
+
+.smile li:nth-child(3) {
+    top: 300px;
+    left: 200px;
+    transform: rotate(45deg);
+}
+
+.smile.on li:nth-child(1) {
+    top: 100px;
+    left: 100px;
+    transform: rotate(45deg);
+}
+
+.smile.on li:nth-child(2) {
+    top: 100px;
+    right: 100px;
+    transform: rotate(45deg);
+}
+
+.smile.on li:nth-child(3) {
+    top: 300px;
+    left: 200px;
+    transform: rotate(220deg);
+}
