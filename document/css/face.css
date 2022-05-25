@@ -14,6 +14,7 @@
     height: 100px;
     border-left: 3px solid #333;
     border-top: 3px solid #333;
+    transition: 0.5s;
 }
 
 .smile li:nth-child(1) {
@@ -49,5 +50,5 @@
 .smile.on li:nth-child(3) {
     top: 300px;
     left: 200px;
-    transform: rotate(220deg);
+    transform: rotate(225deg);
 }
