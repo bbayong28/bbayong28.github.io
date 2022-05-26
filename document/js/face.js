@@ -1,5 +1,5 @@
 $(function () {
     $('.smile').on('click', function () {
-        $(this).toggleClass('on');
-    })
+        $(this).toggleClass('on')
+    });
 })
