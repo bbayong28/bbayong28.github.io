@@ -1,54 +1,50 @@
-.smile {
+.smile{
     position: absolute;
-    inset: 50% auto auto 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
-    background: wheat;
+    background:rgb(253, 236, 205);
     border-radius: 50%;
 }
 
-.smile li {
+.smile li{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-left: 3px solid #333;
     border-top: 3px solid #333;
+    transform: rotate(225deg);
     transition: 0.5s;
 }
 
-.smile li:nth-child(1) {
-    top: 100px;
-    left: 100px;
-    transform: rotate(-135deg);
+.smile li:nth-child(1){
+    top: 150px;
+    left: 120px;
 }
 
-.smile li:nth-child(2) {
-    top: 100px;
-    right: 100px;
-    transform: rotate(-135deg);
+.smile li:nth-child(2){
+    top: 150px;
+    right: 120px;
 }
-
-.smile li:nth-child(3) {
-    top: 300px;
-    left: 200px;
+.smile li:nth-child(3){   
+    bottom: 100px;
+    left: 210px;
+    border-left: 3px solid #f00;
+    border-top: 3px solid #f00;
     transform: rotate(45deg);
 }
 
-.smile.on li:nth-child(1) {
-    top: 100px;
-    left: 100px;
+/*.smile.on li {
+    transform: rotate(45deg);
+}*/
+
+.smile.on li:nth-child(1), 
+.smile.on li:nth-child(2){
     transform: rotate(45deg);
 }
 
-.smile.on li:nth-child(2) {
-    top: 100px;
-    right: 100px;
-    transform: rotate(45deg);
-}
-
-.smile.on li:nth-child(3) {
-    top: 300px;
-    left: 200px;
+.smile.on li:last-child {
     transform: rotate(225deg);
 }
