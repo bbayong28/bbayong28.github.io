@@ -36,15 +36,9 @@
     transform: rotate(45deg);
 }
 
-/*.smile.on li {
-    transform: rotate(45deg);
-}*/
-
-.smile.on li:nth-child(1), 
-.smile.on li:nth-child(2){
+.smile.on li {
     transform: rotate(45deg);
 }
-
 .smile.on li:last-child {
     transform: rotate(225deg);
 }
