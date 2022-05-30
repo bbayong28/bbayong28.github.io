@@ -268,20 +268,201 @@ text-indent:
  
 내용은 장마다 스크린샷, url 소감 (이홈페이지는 어떤 요구를 받았을까, 주로쓰는 색, 보조로 쓴 색은 뭘까)
 
+-------------------------------------------------------------------------
+5/25
+
+V8-> node.js 서버 만들 수 있고 리모콘같은거 만들 수 있도록 함.
+html css javascript 배우면 php 보통 배움 
+
+우리는 node.js 할지 javaspring을 하게될지 아직모르지만 열심히!!
+inline-block vertical align이 먹음
+
+display:none, position:static은 PC에서는 안중요하지만 반응형들어가면 필수라 아주중요!
+
+기준에 overflow hidden하면 떠버린 absolute를 없앰
+
+
+position sticky는 익스에서 안먹음
+리엑트가 익스에서 먹는 이유는 익스에서 먹는걸로 바꿔주는 프로그램통해서.
+
+
+웹앱  앱처럼 작동하는 웹
+
+
+background-size: cover(박스를, 값을 다 채우려고하고)/contain(사진을 다 보여주려고 함)/auto
+background-attachment : fix
+
+
+ background: #f00 url(../img/main_banner01.jpg) no-repeat fixed center/cover; (축약형이다)
+
+    background: #f00;
+    background-image: url(../img/main_banner01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll/ fixed / local
+    background-size: cover;
+    background: #f00 url(../img/main_banner01.jpg) no-repeat fixed center/cover; 
+
+
+fixed는 아이폰(사파리)에서 안 돌아감
+
+here.addClass('on').siblings().removeClass('on')
+---------------------- ----------   -------------------
+여기에는 붙이고    형제들은       지운다
+
+    $('.main_slider').on('init reInit afterChange', function () {
+        var here = $('.slick-current');
+        here.addClass('on').siblings().removeClass('on')
+    });
+
+init reInit 붙이면 첫화면부터 적용됨.
+
+this
+this index
+
+자바스크립트로 고유번호 붙여주기
+$(function () {
+    $('.num li').on('click', function () {
+        var idx = $(this).index();
+        console.log(idx)
+    })
+})
+슬릭말고 이렇게 해서 도
+
+$(function () {
+    $('.num li').on('click', function () {
+        var idx = $(this).index();
+        console.log(idx);
+        $('.shoes .case ul').css({ top: -450 * idx })
+    })
+})
+
+https://jqueryui.com/ ->   Easing
+애니메이션 설계 등속이 아니고  베지어 곡선
+
+slide에 on붙이는거 
+바디안에다가 동그라미 하나 만들기
+500 500 검은 동그라미
+top 50 left 50 trase -50 -50%
+ul
+li*3(사각형박스) 원기준 네모를 absolute
+네모 border-left border top
+trasform 눈 45 45 입 135 로돌리기
+ul을 클릭했을때 ul에 on붙이기
+on붙었을때 li rotate값
+자바스크립트 2줄
+
+
+-------------------------------------------------------------------------
+5/26
+ul과 ol은 li만 쓸 수 있음
+
+ul 순서가 없는 목록  -- li
+ol 순서가 있는 목록  -- li
+dl 정의 목록  -- dt, dd 
+
+모던 웹을 위한 JavaScript + jQuery 입문
+
+
+position: absolute일 때 스크롤 바가 있었는데  position: fixed;로 바꾸니 스크롤 사라짐
+-------------------------------------------------------------------------
+5/27
+html,css는 좋은 책없고
+javascript 는 얇고 싸고 베스트셀러 밑에 있는 책
+구현을 잘 해야함
+
+h2 안에는 (피치못할 사정있으면 박스를 쓰기도 하지만) 보통 박스 안들어가는게 룰
+
+ <img src="./img/main_bg01.jpg" alt="DK-steel">
+alt에 이미지 설명 적어야 하지만 보통 회사에서 검색하면 하나라도 더 나오게하려고 회사이름 넣음
+
+address 태그 꼭 써야하는 건 아님 - 주소라는 의미가 아닌 오너의 의미
+
+address쓰면 글자가 기울어져있음 해제하려면  font-style: normal;
+
+-------------------------------------------------------------------------
+5/30
+html 에서 <div class="on">   ->   css 에서 div.on이 됨  ★중요★
+jQuery 에서 $('div').toggleClass('on')
+javascript 에서 $(function () { $(div).on('click', function () { $(this).toggleClass('on') }); })
+
+포토샵 시안잡기 2일정도
+
+contain ≠ conTain  -> 대소문자를 구분한다
+bbn-fdf__ 이렇게 섞어써도됨. 
+
+​
+
+1. 카멜 표기법(camel case)
+
+ 낙타 등처럼 내려갔다 올라가는 모양이라 하여 지어진 이름
+
+ 단어가 여러개 붙을 때, 앞 단어를 제외한 첫자를 대문자로 표기
+
+ java, C# 등의 언어들에서 권장 
+
+ ex) dailyUserTable
+
+2. 파스칼 표기법(pascal case)
+
+ 모든 단어의 앞자가 대문자로 시작(단어의 수와 상관 없음)
+
+ 네임스페이스, 이벤트, 프로퍼티, 클레스 네임을 지정할 때 주로 사용
+
+ 클래스 등에서 많이 사용
+
+ DailyUserTable
+
+3. 스네이크 표기법(snake case), 팟홀 표기법(pothole case) 
+
+ 모든 단어가 소문자로 표시
+
+ 다른 의미를 갖는 단어들의 조합에서 각 단어의 구분을 위하여 언더바( _ )를 붙힘
+
+ 단어 사이의 '_' 가 뱀처럼 보인다고 해서 유래
+
+ 언더바 표기법 이라고도 불리움
+
+ C++에서 권장
+
+       ex) daily_user_table
+
+4. 헝가리안 표기법
+
+ 접두어에 자료형을 붙힘
+
+ 마이크로소프트 개발자 중 헝가리 프로그래머가 쓰던 변수 명명법
+
+ 현재는 자료형을 쉽게 알아 볼수 있는 다양한 방법들이 많기 때문에 권장하지 않음
+
+ ex) strDailyUserTable
+
+5. 커스텀
+
+ 개발사만의 또는 개발 조직 자체적으로 사용하는 방식 또한 많이 사용
+
+ ex) 접두사(두자리)_풀네임(단어)_약어....
+
+     접두사 대문자, 단어의 첫글짜 대문자, 약어 대문자
+
+     ST_User_CD
 
 
 
+보통 카멜, 파스칼 섞어씀
+
+html 주석 <!-- { 2022.05.30 hwayeong}  --> 
+css 주석 /* 2022.05.30 hwayeong */
+js 주석 // 2022.05.30 hwayeong             or           /*  */
+
+풀페이지도 슬릭처럼 css js 파일 들고와야함
 
 
+자바스크립트에 header red해놓고 css에 파란색 적어서 위에 파일 다 연결해놓으면 파랑색나옴
+script링크 연결 뒤에 defer 쓰면 빨갛게 변함 근데 css에 !important적으면 다시 파랑이 우선됨
+
+반응형은    event가 click이 돼서 자바스크립트가 필수적!!
 
 
-
-
-
-
-
-
- 
 
 
 
