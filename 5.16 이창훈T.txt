@@ -463,6 +463,35 @@ script링크 연결 뒤에 defer 쓰면 빨갛게 변함 근데 css에 !importan
 반응형은    event가 click이 돼서 자바스크립트가 필수적!!
 
 
+max-width: 1200px;
+width: 100%;
+ 는 한번에 주는게 아니고 필요한 부분부분마다 나눠서 주는거다!!
+(스크롤 안생김!)
+
+
+-------------------------------------------------------------------------
+5/31
+
+package.json
+
+slick.min.js slick.js 두개 다름 slick.min.js 써야함
+slick자체에서 img를 display block 시킴
+자동으로 div 4개 만들어짐 -> 자손선택X, nth-child 만들어서 하면 낭패를 봄, 번호특정하기 어려움
+
+다운 받은 slick.min.js 파일 압축풀어서 slick.min.js, slick.css 파일 두개만 꺼냄
+
+
+figure.itm0$.itm  ->     <figure class="itm01 itm"></figure>
+                              <figure class="itm02 itm"></figure>
+                              <figure class="itm03 itm"></figure>
+
+
+
+
+
+
+
+
 
 
 
