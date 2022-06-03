@@ -91,22 +91,22 @@
             background: #fff;
         }
 
-        nav>ul>li:nth-child(1) ul::before,
+        nav>ul>li:nth-child(1) ul::before {
+            border: 3px solid #333;
+        }
+
         nav>ul>li:nth-child(2) ul::before {
-            content: "";
-            position: absolute;
-            inset: -10px auto auto 50%;
-            transform: translateX(-50%) rotate(45deg);
-            width: 20px;
-            height: 20px;
             border: 7px solid #f00;
             border-radius: 50%;
-            background: #fff;
             z-index: 999;
             box-sizing: border-box;
         }
 
-        
+        nav>ul>li:nth-child(3) ul::before {
+            border: 3px solid blueviolet;
+            border-radius: 50%;
+        }
+
         .main_visual {
             position: relative;
             height: 500px;
