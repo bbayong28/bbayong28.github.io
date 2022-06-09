@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header 03 - 가로배치</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/basic01.css">
+    <style>
+        .header {
+            background: #f7f7f7;
+            line-height: 100px;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            width: 200px;
+        }
+
+        .header .btn {
+            width: 200px;
+            text-align: right;
+        }
+
+        .header .btn i {
+            font-size: 23px;
+            padding: 5px;
+            background: #ddd;
+            border-radius: 3px;
+            vertical-align: middle;
+            cursor: pointer;
+            /* 
+            transform: translateY(5px);
+            vertical-align: -2px;
+            margin(-top) 안먹음 겹침현상 때문에
+            */
+        }
+
+        .header nav>ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        .header nav>ul a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="">menu01</a></li>
+                        <li><a href="">menu02</a></li>
+                        <li><a href="">menu03</a></li>
+                        <li><a href="">menu04</a></li>
+                        <li><a href="">menu05</a></li>
+                    </ul>
+                </nav>
+                <div class="btn">
+                    <i class="xi-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main_visual">
+
+            </div>
+        </main>
+        <footer class="footer">
+            &copy basic template.
+        </footer>
+    </div>
+</body>
+
+</html>
