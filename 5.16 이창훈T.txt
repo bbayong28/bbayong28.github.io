@@ -733,30 +733,102 @@ npx start 하면 창이 뜸(안쳐질 때 ctrl + c  ->   y)
 
 src index js   
 
+-------------------------------------------------------------------------
+6/13
+  <div class="slider">
+        <figure>01</figure>
+   </div>
+
+div 안에 div로 잡으면 중복중복이라 보통 슬라이드 돌릴때 div 안에 figure잡는다.(후손으로 잡기 힘들다)
+img inline - block  인데 slick에서 img 를 block으로 잡아버림
+$(function () { 
+    $('.slider').slick({
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed:3000, //1초=1000
+        dots: true,
+        PauseOnHover: false,
+        
+
+    });
+})
+
+codntent/contents
+slide/slider
+
+-------------------------------------------------------------------------
+6/14
+
+슬라이더안은 figure로 만든다!!!
+$(function () {
+    
+    $('.main_slider').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,  
+        centerPadding: '150px',
+        
+    });
+
+})
+
+센터모드 -> 중앙배열 양쪽옆 다른사진으로 여백
+센터패딩 -> 여백간격조절
+
+
+    $('.main_slider').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,  
+        centerPadding: '250px',        
+    });
+--------------------------------------------------------------------
+    $('.slide01 .slide_arrows i:nth-child(1)').on('click', function () {
+        $('.main_slider').slick('slickPrev')
+    })
+    
+    $('.slide01 .slide_arrows i:nth-child(2)').on('click', function () {
+        $('.main_slider').slick('slickNext')
+    })
+--------------------------------------------------------------------
+이거 대신 arrow,dots 커스텀으로 해결할 수 있음
+haamygithub.io/pf03/
+trasform은 자기 자신만 변화시킴 !
+
+
+.main_visual .num{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 팝업공식중에서 x축만 중간에오게 */    
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/number.png);
+}
+-------------------------------------------------------------------------
+6/15
+git add .
+
+git commit -m "20222022"
+
+gitp push
+
+-------------------------------------------------------------------------
+6/16
+
+parallax - 생활코딩이 잘 설명해줌
+pixabay - 무료이미지, 동영상다운
+
+yt player (https://github.com/pupunzi/jquery.mb.YTPlayer) -> go to the demo
+https://pupunzi.com/mb.components/mb.YTPlayer/demo/demo.html
 
 
 
+https://github.com/pupunzi/jquery.mb.YTPlayer 다운로드 dist  jquery.mb.YTPlayer.min.css ,jquery.mb.YTPlayer.min.js파일 두개만 가져오기
+https://github.com/pupunzi/jquery.mb.YTPlayer/wiki
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+풀페이지홈페이지에서 다운로드 압출풀고 fullpage.min. js,fullpage.min.css ㅍ파일 다운
 
 
 
