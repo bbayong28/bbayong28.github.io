@@ -75,7 +75,7 @@ img {
     border: 0;
     vertical-align: middle;
     font-size: 0;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 table {
@@ -111,12 +111,12 @@ i {
     font-style: normal;
 }
 
-button {
+/* button {
     color: inherit;
     border: 0;
     background: none;
     cursor: pointer;
-}
+} */
 
 hr {
     margin: 0;

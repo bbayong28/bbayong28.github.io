@@ -82,7 +82,7 @@ transform: translate(-50%,-50%);
 index - 번호 
 
 document.querySelector('.popup button').addEventListener('click', function(){})
-                                                                                이벤트    할일
+                                                                 이벤트    할일
 
 
 이벤트는 정해져있어서 외워야함.(클릭 스크롤 이벤트 휠이벤트 포커스 )
@@ -484,6 +484,267 @@ slick자체에서 img를 display block 시킴
 figure.itm0$.itm  ->     <figure class="itm01 itm"></figure>
                               <figure class="itm02 itm"></figure>
                               <figure class="itm03 itm"></figure>
+
+
+-------------------------------------------------------------------------
+6/2
+
+html_run 여기선 html, css
+
+vs - code 단축키 필요한거 외우기
+
+:nth-child 선택자 잘 안씀
+
+후손 자식 부모 선택자는 알고있어야 함.
+
+css 네이밍 규칙  https://uipac.com/451
+(숫자가 먼저오면 안됨)
+
+display none 했다가 나타나는 거는 애님메이션 안먹음 높이값으로 조절
+hover 시 0-215로 바꾸면됨
+
+우리나라 실무 display -> position
+서양 position-.>display
+
+
+box-sizing: border-box를 *{}에 리셋해줬어도  ::before, ::After에는 적용 안됨 따로 줘야함
+
+
+
+opacity visibility
+
+
+-------------------------------------------------------------------------
+6/3
+
+
+desipossa
+
+
+
+
+
+/* inline-block 요소의 부모에 text-align:center로 박스를 가로로 배열할 수 있다. */
+        .inlineToInlineblock {
+            text-align: center;
+            font-size: 0;
+        }
+
+        /* inline요소를 inline-block요소로 바꿈 
+        박스 사이의 간격이 4px정도 생긴다.*/
+        .inlineToInlineblock span {
+            display: inline-block;
+            /* width는 box안 글자들 너비만큼이다. 따라서 width 값 없이 font-size: 0;이 되면 box 없어짐. */
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            background: rgba(255, 0, 0, 0.3);
+            color: #fff;
+            padding: 30px 0;
+            margin: 30px 0;
+        }
+
+
+
+div선택자로 잘 ㄹ안잡음 
+
+        .position-absolute span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+        }l
+
+span inline이지만 position absolute 잡아놓으면 width 먹음
+
+
+https://caniuse.com/ 캔아이 유즈 
+
+
+-------------------------------------------------------------------------
+6/7
+폰트 그림
+폰트 그림위에 겹쳐놓기
+타이포그래피 중요
+원래 1920인데 스크롤바20떄문에 1900
+1200라인을 넣음 그 안에 그림 넣음
+1200이 될 수도 있고 1170 될수도 있음.
+
+
+1. 라인맞추기
+2. 강약조절 폰트,배경 강하게들어가면 약하게 들어가고 약하게 들어가면 강하게 들어간다(타이포그래피)
+3. 공간을 많이 준다(그림과 텍스트사이, 텍스트와 텍스트사이) - 일단 넓게주고 나중에 차츰차츰 줄여나감
+
+그리드시스템
+12칼럼 (12개의 구역을 나누고 구역안에 이미지를 채음 )왜 12일까? (12, 6+6, 4+4+4, 3+3+3+3) 
+
+font :노트산스로 통일!!\
+폰트의 두께 사이즈 공간 만으로 디자인 잡기, 색 주는거 금지 무조건 검정색,배경에 그림깔거나 어떤장치하는거 금지. (이미지 채우던가 흰 배경 해놓던가)
+
+px로 작업
+
+edit-> preferences -> general
+
+use regacy"New Document" interface
+use legacy free transform
+
+두개 체크
+
+Workspace 에 open Document as tab 체크 풀기
+unit & rulers 절대 손 대지말기(제일 중요)  units에 type pixels로 맞추기
+
+
+ctrl N 새파일 
+rgb color
+8bit
+
+https://c1jang.github.io/project01/
+
+
+-------------------------------------------------------------------------
+6/8
+시안 + 코딩한거 같이 제출
+리액트 - 웹페이지 만드는 방법만 
+
+https://fontawesome.com/v5/cheatsheet
+폰트어썸은 있는데 xeicon에는 없음
+xeicon cheatsheet :  https://younghunkimm.github.io/xeicode/
+
+
+
+내일 icon 포토샵에서 어떻게 보이게 하는지
+-------------------------------------------------------------------------
+6/9
+끊기는라인
+그 다음에는 시안을 잡는데 자동차회사로
+
+
+xeicon들어가서 홈페이지에서 다운 후 압축풀고 fonts 파일 들어가서 xeicon.ttf 들어가서 설치 누름
+포토샵 글꼴에 xeicon뜸
+문자표 들어가서 xeicon치고 문자열 입력 후 복사해서 포토샵 텍스트박스에 쓰면됨.
+(안보인다면 레아이웃이 밑에 깔린게 아닌가 확인해보기!)
+
+
+
+ctrl+shift+alt+W 저장
+ctrl+shift+alt+s 웹으로저장
+
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+액션에 단축키 등록하는 방법(이미지 크롭하는 매크로)
+
+1. 액션 창 열기 – Window > actions
+
+2. 새로 만들기 클릭 후 New Action에 이름과 단축키 설정(Function key)
+
+3. 액션 녹화가 시작되면 빨간 원이 생깁니다. 그때 원하는 기능을 작동시킨 후 정지 버튼 클릭 – 끝!
+
+이미지 크롭 -> 원하는 이미지 레이아웃 켜놓고 ctrl+C ctrl+V ctrl+n했을 때 배경 white -> 투명을 바꾸고 저장하기
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+ text-shadow  / box- shadow
+d
+이번주, 다음주는 헤더부분만 시안
+
+제이쿼리는 메소드 시간 안뺄꺼다
+어떻게 쓴다만 알면됨
+https://github.com/desipossa
+
+-------------------------------------------------------------------------
+6/10
+
+position(어디에)
+static
+relative : 기준점 
+absolute : 뜬다 쪼그라든다 기준이 없어진다 box가 된다
+fixed : 기준점이 없다(화면(view port)을 기준으로 함) 스크롤해도 고정
+
+display(어떻게)
+none
+block
+inline-block inline의 성질(박스를 옆에 오게 할 수 있다)+block(margin,padding 값을 먹음)       단점 : 박스 사이가 뜸
+inline
+
+
+제이쿼리 객체를 만들어주는 함수다
+
+이름()로 된 함수다
+var 로 정의 -> 변수
+function() -> 매개변수
+$('').on('click',function)  click -> 매개변수,이벤트 
+
+
+querySelector('click')function()
+
+
+객체지향(객체를 다루는 프로그램)
+
+const TxT = [,,.txt];
+const DEG -360 / TXT.length;
+
+nth-child, nth- of type 쓰는건 좋은 버릇은 아님.
+<a href="#!"> 포폴용 대비해서 
+
+
+
+
+<a href="">
+<a href="#">
+<a href="#!">
+<a href="/">
+
+다단메뉴 쓸 떄 자식선택자 잡아야함 (>로!!)
+  
+padding margin언제쓴느지
+
+바닐라자바스크립트, 리엑트 만들때 쓸꺼닷
+
+div class = "on"
+
+
+Git + Hub(공간소)
+깃깔아서 깃허브랑 연결해야함
+1. 깃을 깐다.
+2. 깃허브
+
+
+gul그래픽유저인터페이스
+cli 코멘트어쩌고저쩌고 쳐서하는 방식 이걸쓸거다
+
+node
+create react app  -> 프레임워크
+
+
+git add.
+
+위에 체크모양 누르고 "나의 첫 커밋" 입력하면 사본 저장 됨.
+
+
+https://nodejs.org/en/ 18.3.0 
+node -v
+npm -v
+npx create-react app p
+npx create-react-app project00
+y
+cd project00
+npx start 하면 창이 뜸(안쳐질 때 ctrl + c  ->   y)
+
+src index js   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
