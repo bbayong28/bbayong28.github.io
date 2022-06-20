@@ -55,17 +55,30 @@
                         </button>
                     </form>
                     <script>
+                        // var searchInput = document.querySelector('#searchForm input');
+                        // function searchAction() {
+                        //     if (searchInput.value.length < 5) {
+                        //         alert('더 입력해');
+                        //         searchInput.value = ' ';
+                        //     }
+                        //     else {
+                        //         alert(searchValue);
+                        //         searchInput.value = ' ';
+                        //     }
+                        //     searchInput.focus();
+                        // }
+
                         function searchAction() {
                             var searchValue = $('#searchForm input').val();
                             alert(searchValue + '을(를) 검색할 수 없습니다.')
-                            if (searchValue.length < 5) {
-                                alert('더 입력하세요.');
-                            }
-                            else {
-                                alert(searchValue);
-                            }
-                            $('#searchForm input').val('');
-                            $('#searchForm input').focus();
+                            //if (searchValue.length < 5) {
+                            //    alert('더 입력하세요.');
+                            //}
+                            //else {
+                            //    alert(searchValue);
+                            //}
+                            //$('#searchForm input').val('');
+                            //$('#searchForm input').focus();
                         }
                     </script>
                 </div>
@@ -108,9 +121,18 @@
             </section>
 
         </main><!-- main 끝-->
+
+
+
+
         <footer id="footer">
 
+
         </footer><!-- footer 끝-->
+
+
+
+
     </div><!-- Wrap 끝-->
 
 
