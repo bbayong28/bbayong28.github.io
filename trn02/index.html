@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체페이지 실습 01</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="Wrap">
+        <!-- {20220620 shin topBanner} -->
+        <div class="topBanner">
+            <!-- top 배경부분 전체 -->
+            <div class="inner">
+                <!-- 1200px상자 -->
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>
+                    모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+                    <a href="">MORE</a>
+                </p>
+                <i class="xi-close"></i>
+            </div><!-- inner 끝-->
+        </div>
+        <!-- {20220620 shin topBanner} -->
+
+        <header id="header">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./img/grafflogo.png" alt="graff">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="">하이주얼리</a></li>
+                        <li><a href="">주얼리 컬렉션</a></li>
+                        <li><a href="">컬렉션 &amp; 브라이덜</a></li>
+                        <!-- &nbsp; 띄어쓰기 &amp; & -->
+                        <li><a href="">웨딩주얼리</a></li>
+                        <li><a href="">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+                <div id="searchForm">
+                    <form action="javascript:searchAction()">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button>
+                            <i class="xi-search"></i>
+                        </button>
+                    </form>
+                    <script>
+                        function searchAction() {
+                            var searchValue = $('#searchForm input').val();
+                            alert(searchValue + '을(를) 검색할 수 없습니다.')
+                            if (searchValue.length < 5) {
+                                alert('더 입력하세요.');
+                            }
+                            else {
+                                alert(searchValue);
+                            }
+                            $('#searchForm input').val('');
+                            $('#searchForm input').focus();
+                        }
+                    </script>
+                </div>
+            </div><!-- container 끝-->
+        </header><!-- header 끝-->
+
+
+        <main id="main">
+            <section class="mainVisual">
+                <div class="mainSlider">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <h2>01. JEWELLERY COLLECTION</h2>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <h2>02. JEWELLERY COLLECTION</h2>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <h2>03. JEWELLERY COLLECTION</h2>
+                            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                            <a href="">more</a>
+                        </div>
+                    </figure>
+                </div>
+                <div class="slideNum">
+                    slideNum
+                </div>
+                <div class="mainArrow">
+                    <i class="xi-arrow-left"></i>
+                    <i class="xi-arrow-right"></i>
+                </div>
+            </section>
+
+        </main><!-- main 끝-->
+        <footer id="footer">
+
+        </footer><!-- footer 끝-->
+    </div><!-- Wrap 끝-->
+
+
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js""></script>
+    <script src=" ./js/jquery.mb.YTPlayer.min.js""></script>
+    <script src="./js/main.js""></script>
+
+</body>
+
+</html>

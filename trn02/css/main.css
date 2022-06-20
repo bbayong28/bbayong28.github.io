@@ -1,0 +1,257 @@
+.Wrap{}
+
+
+.container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBanner{
+    padding: 30px 0;
+    background: #f1f1f1;
+}
+
+.topBanner .inner{
+    position: relative;
+}
+
+.topBanner h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.topBanner p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.topBanner a{
+    margin-left: 10px;
+    padding: 3px 15px 5px 15px;
+    border: 1px solid #333;
+    /* background: #333;
+    color: #fff; */
+}
+
+.topBanner i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* inset: 0 0 auto auto; */
+    font-size: 21px;
+    padding: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 20220620 shin topBanner 끝*/
+
+
+#header{
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .container{
+    justify-content: space-between;
+
+}
+
+#header nav ul{
+    display: flex;
+}
+
+#header nav>ul>li>a{
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+#header nav>ul>li~li::before{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+}
+
+#header a{
+    display: inline-block;
+}
+
+#searchForm input[type="text"]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+    color: #f00;
+}
+
+#searchForm input[type="text"]::placeholder{    
+  color: #f00;
+}
+/* input::placeholder {
+  color: red;
+} */
+
+#searchForm input[type="text"]:focus::placeholder{        
+    opacity: 0;
+    /* color: transparent; */
+}
+
+#searchForm button{
+    background: transparent;
+    outline: none;
+    border:none;
+    font-size: 21px;
+}
+
+.mainVisual{
+    position: relative;
+}
+
+.mainVisual .mainSlider figure{
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlider .itm01{
+    background: url(../img/mainvisual01.jpg) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .itm02{
+    background: url(../img/mainvisual02.jpg) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .itm03{
+    background: url(../img/mainvisual03.jpg) no-repeat center center / cover;
+}
+
+.mainVisual .mainSlider .inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* inset: 50% auto auto 50%; */
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+
+.mainVisual .mainSlider .itm02 .inner{
+    color: #333;
+    text-shadow: 0 0 3px #fff;
+}
+
+.mainVisual .mainSlider .inner h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    /* margin: 0 0 10px 0; */
+}
+
+.mainVisual .mainSlider .inner p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.mainVisual .mainSlider .inner a{
+    display: inline-block;
+    padding: 5px 20px;
+    background: #333;
+
+}
+
+.mainVisual .mainSlider figure h2{
+    transform: translateY(100px);
+    opacity: 0;    
+}
+
+.mainVisual .mainSlider figure.on h2{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.mainVisual .mainSlider figure p{
+    transform: translateY(100px);
+    opacity: 0;    
+}
+
+.mainVisual .mainSlider figure.on p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 0.5s;
+}
+
+.mainVisual .mainSlider figure a{
+    transform: translateY(100px);
+    opacity: 0;    
+}
+
+.mainVisual .mainSlider figure.on a{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 1s;
+}
+
+.mainVisual .mainSlider .slick-dots{
+    position: absolute;
+    inset: auto auto 100px 50% ;
+    transform: translateX(-50%);
+}
+
+.mainVisual .mainSlider .slick-dots li{
+    display: inline-block;    
+}
+
+.mainVisual .mainSlider .slick-dots button{
+    border-radius: 50%;
+    outline: none;
+    border:  none;
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+}
+
+.mainVisual .mainSlider .slick-dots li.slick-active button{
+    background: #f00;
+    color: #fff;
+}
+
+.slideNum{
+    position: absolute;
+    inset: 50px auto auto 50%;
+    margin: 0 0 0 600px;
+    transform: translateX(-100%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    font-size: 41px;
+}
+
+.mainArrow i{
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 100px;
+
+}
+
+.mainArrow i.on{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mainArrow i:nth-child(1){
+    margin: 0 0 0 -700px;
+}
+.mainArrow i:nth-child(2){
+    margin: 0 0 0 700px;
+}
+
