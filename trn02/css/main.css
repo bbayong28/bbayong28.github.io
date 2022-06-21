@@ -258,3 +258,209 @@
     margin: 0 0 0 700px;
 }
 
+.mainContent{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.mainContent h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.mainContent p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em ;   /* 15px * -0.025 */
+}
+
+.mainContent .container{
+    gap: 30px;
+}
+
+.mainContent .container figure {
+    flex: 1;
+}
+
+.mainContent .container img{
+    margin-bottom: 10px;
+}
+
+.mainContent .container strong{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.mainContent .container a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+.mainContent2{
+    padding: 100px 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.mainContent2 h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.mainContent2 p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.mainContent2 .container{
+    gap: 30px;
+}
+
+.mainContent2 .container figure{
+    flex: 1;
+}
+.mainContent2 .container img{
+    margin-bottom: 10px;
+}
+
+.mainContent2 .container strong{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.mainContent2 .container a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.mainContent3{
+    padding: 100px 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.mainContent3 h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.mainContent3 p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.mainContent3 .container{
+    gap: 30px;
+}
+
+.mainContent3 .container figure{
+    flex: 1;
+}
+.mainContent3 .container img{
+    margin-bottom: 10px;
+}
+
+.mainContent3 .container strong{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.mainContent3 .container a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+.mainContent3 figure .box{
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: border-radius 0.5s 0.5s; 
+    
+}
+
+.mainContent3 figure:hover .box{
+    border-radius: 50%;
+}
+.mainContent3 .container figure img{
+    transition: 0.5s;
+}
+
+.mainContent3 .container figure:hover img{
+    transform: scale(1.3); 
+}
+
+.fixedBg {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/mainvisual01.jpg) no-repeat fixed center center / cover ;
+    /* background-attachment: fixed; 배경고정 */
+    filter: grayscale(1);
+}
+
+.fixedBg h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.fixedBg p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.fixedBg i{
+    padding: 5px;
+    background: #f00;
+    vertical-align: -10%;
+    border-radius: 50%;
+}
+
+
+.fixedBg2 {
+    padding: 100px 0;
+    margin-bottom: 100vh;
+    text-align: center;
+    color: #fff;
+    background: url(../img/mainvisual01.jpg) no-repeat fixed center center / cover ;
+    /* background-attachment: fixed; 배경고정 */
+}
+
+.fixedBg2 h2{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.fixedBg2 p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.fixedBg2 i{
+    padding: 5px;
+    background: #f00;
+    vertical-align: -10%;
+    border-radius: 50%;
+}

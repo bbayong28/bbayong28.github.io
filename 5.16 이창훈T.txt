@@ -830,5 +830,24 @@ https://github.com/pupunzi/jquery.mb.YTPlayer/wiki
 
 풀페이지홈페이지에서 다운로드 압출풀고 fullpage.min. js,fullpage.min.css ㅍ파일 다운
 
+-------------------------------------------------------------------------
+6/20
+이번주는 건축회사
+class쓸때 camel case쓸거임
 
+깃허브 위치 바꾸면 cd 폴더위치 -> git remote add origin main -> git add .-> git commit -m "220221" -> git push
+깃허브 branch 마스터에서 메인으로 바꿨을 때
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
+
+git init -> git add "파일이름" -> git commit -m "220221" -> git push
+
+-------------------------------------------------------------------------
+6/21
+
+css 적는 순서
+position display m/p font
 
