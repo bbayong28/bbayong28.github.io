@@ -211,23 +211,75 @@
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
                 <a href="">more <i class="xi-arrow-right"></i> </a>
             </section>
-            <section class="fixedBg2">
+
+            <section class="service">
+                <div class="container">
+                    <div class="left">
+                        <div class="case">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/
+                            embed/-yFeZekJxZ8" title="Smooth Jazz Music & Bossa Nova For Good Mood - 
+                            Positive Jazz Lounge Cafe Music, Coffee Shop BGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="case">
+                            <!-- * 카카오맵 - 지도퍼가기 -->
+                            <!-- 1. 지도 노드 -->
+                            <div id="daumRoughmapContainer1655857973360"
+                                class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                            <!--
+                                        	2. 설치 스크립트
+                                        	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                                        -->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1655857973360",
+                                    "key": "2ap49",
+                                    //"mapWidth": "640",
+                                    //"mapHeight": "360"
+                                }).render();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="utb">
                 <h2>JEWELLERY COLLECTION</h2>
-                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
-                <a href="">more <i class="xi-arrow-right"></i> </a>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한
+                    컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <a href="" class="zoom">ZOOM <i class="xi-expand-square"></i></a>
+                <div id="utb" class="player"></div>
+            </section>
+            <section class="scrollMe">
+                <div class="container scrollme">
+                    <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="400">
+                        <img src="./img/sm01.jpg" alt="">
+                    </figure>
+                    <figure class="animateme" data-from="1" data-to="0" data-opacity="0">
+                        <img src="./img/sm02.jpg" alt="">
+                    </figure>
+                    <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="400">
+                        <img src="./img/sm01.jpg" alt="">
+                    </figure>
+                </div>
             </section>
 
+
+
+
+
         </main><!-- main 끝-->
-
-
-
 
         <footer id="footer">
 
 
         </footer><!-- footer 끝-->
-
-
 
 
     </div><!-- Wrap 끝-->
@@ -237,6 +289,7 @@
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src=" ./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

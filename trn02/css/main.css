@@ -1,6 +1,5 @@
 .Wrap{}
 
-
 .container{
     display: flex;
     width: 1200px;
@@ -89,7 +88,7 @@
 
 #searchForm input[type="text"]{
     outline: none;
-    border: none;
+    border: none; 
     border-bottom: 1px solid #333;
     padding: 5px 0;
     color: #f00;
@@ -436,31 +435,66 @@
     border-radius: 50%;
 }
 
-
-.fixedBg2 {
+.service{
     padding: 100px 0;
-    margin-bottom: 100vh;
-    text-align: center;
-    color: #fff;
-    background: url(../img/mainvisual01.jpg) no-repeat fixed center center / cover ;
-    /* background-attachment: fixed; 배경고정 */
 }
 
-.fixedBg2 h2{
+.service .container{
+    gap: 30px;
+}
+
+.service .container>div{
+    flex: 1;   
+}
+
+.service .container .case{
+    position: relative;
+    padding-bottom: 56.25%;  
+}
+.service .container iframe{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.service .container .root_daum_roughmap{
+    position: absolute;
+    inset: 0 0 0 0 ;
+    width: 100%;
+}
+.service .container .root_daum_roughmap .wrap_map {
+    height: 100%;
+} 
+.utb{
+    padding: 100px;
+    color: #fff;
+    text-align: center;
+    filter:  grayscale(1);
+}
+.utb h2{
     margin-bottom: 10px;
     font-size: 19px;
     font-weight: 700;
 }
 
-.fixedBg2 p{
+.utb p{
     margin-bottom: 30px;
     font-size: 15px;
     font-weight: 300;
 }
 
-.fixedBg2 i{
+.utb i{
     padding: 5px;
-    background: #f00;
-    vertical-align: -10%;
+    background: #333;
+    vertical-align: 0;
     border-radius: 50%;
+}
+
+.scrollMe{ 
+    padding: 200px 0;
+}
+.scrollMe .container{
+    gap: 70px;
+}
+.scrollMe .container figure{
+    flex: 1;
 }

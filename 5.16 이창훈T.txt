@@ -851,3 +851,31 @@ git init -> git add "파일이름" -> git commit -m "220221" -> git push
 css 적는 순서
 position display m/p font
 
+rem 한버넹 바꿀수 있음
+
+transform-origin: center bottom 0px
+
+-------------------------------------------------------------------------
+6/22
+
+다음map쓰면 반응형 때 지도 전체가 주는게 아니고 F5로 중심오ㅔㄱ 해줘야하는 불편함이 있음(왜이런지 찾아보고 해결법 찾아보기)
+구긂 map 쓰면 전체 반응형 잘됨,
+
+
+.left+.right
+
+<div class="left"></div>
+<div class="right"></div>
+
+#! 포폴때 많이 씀 -> 추천하는 방법은 아님\
+
+
+    $('.utb .zoom').on('click', function (e) {
+        e.preventDefault();
+        $('#utb').YTPFullscreen();
+    })중요
+리액트에서도 씀
+
+https://scrollme.nckprsn.com/ 스크롤미 사이트
+https://github.com/desipossa
+https://github.com/sipossa

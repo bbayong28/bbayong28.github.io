@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .inner {
+            position: relative;
+            padding-bottom: 56.25%;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .inner .root_daum_roughmap {
+            position: absolute;
+            inset: 0 0 0 0;
+            width: 100%;
+        }
+
+        .root_daum_roughmap .wrap_map {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="iframe">
+        <div class="inner">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1655857973360" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+            <!--
+            	2. 설치 스크립트
+            	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1655857973360",
+                    "key": "2ap49",
+                    //"mapWidth": "640",
+                    //"mapHeight": "360"
+                }).render();
+            </script>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<!-- "mapWidth": "640",
+"mapHeight": "360" 
+를 주석처리하고 style 적어주기 안되면 !important 붙이기  -->
