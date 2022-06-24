@@ -695,32 +695,27 @@
 }
 
 
-#footer .top{
-    border-bottom: 2px solid #666;
-}
-/* #fff, #ddd 등 검은배경에 라인 색 너무 띄니까 본인색에서 한톤 띄어주기*/
-
-
 
 #footer .top dt, 
 #footer .top dd{
     display: inline-block;
-    /* padding: 0 15px 0 15px; */
 } 
 
+
+#footer .top{
+    border-bottom: 2px solid #666;
+}
+/* #fff, #ddd 등 검은배경에 라인 색 너무 띄니까 본인색에서 한톤 띄어주기*/
 #footer .top dt::before, 
 #footer .top dd~dd::before{
     content: "";
     display: inline-block;
     margin: 0 15px;
     width: 1px ;
-    height: 12px;   /* 폰트사이즈보다 작아야함 */
+    height: 10px;   /* 폰트사이즈보다 작아야함 */
     background:#ddd;
 }
 
-#footer .top dl a{
- padding: 0 15px 0 15px;
-} 
 
 #footer .top i{
     font-size: 25px;
