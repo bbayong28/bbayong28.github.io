@@ -111,4 +111,15 @@ $(function () {
     });
 
 
+    $('#fl').on('change', function () {
+       // console.log('똑 바로 했나???')
+        console.log($(this), $(this).val())
+        var lnk = $(this).val();
+        //lnk && window.open(lnk);  /* 리액트에서 쓸거다 */          
+        if (lnk) {
+            window.open(lnk);            
+        }     
+        
+    })
+
 })

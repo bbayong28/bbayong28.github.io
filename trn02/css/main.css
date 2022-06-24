@@ -12,8 +12,12 @@
 }
 
 .topBanner{
+    position: sticky;
+    inset: 0 auto auto 0;
+    width: 100%;
     padding: 30px 0;
     background: #f1f1f1;
+    z-index: 999;
 }
 
 .topBanner .inner{
@@ -349,7 +353,6 @@
 .mainContent3{
     padding: 100px 0;
     text-align: center;
-    background: #f9f9f9;
 }
 
 .mainContent3 h2{
@@ -371,9 +374,6 @@
 
 .mainContent3 .container figure{
     flex: 1;
-}
-.mainContent3 .container img{
-    margin-bottom: 10px;
 }
 
 .mainContent3 .container strong{
@@ -399,11 +399,11 @@
 .mainContent3 figure:hover .box{
     border-radius: 50%;
 }
-.mainContent3 .container figure img{
+.mainContent3 figure img{
     transition: 0.5s;
 }
 
-.mainContent3 .container figure:hover img{
+.mainContent3 figure:hover img{
     transform: scale(1.3); 
 }
 
@@ -430,7 +430,7 @@
 
 .fixedBg i{
     padding: 5px;
-    background: #f00;
+    background: #333;
     vertical-align: -10%;
     border-radius: 50%;
 }
@@ -465,7 +465,7 @@
     height: 100%;
 } 
 .utb{
-    padding: 100px;
+    padding: 100px 0;
     color: #fff;
     text-align: center;
     filter:  grayscale(1);
@@ -533,7 +533,6 @@
     padding: 40px 15px 0 15px;
     font-size: 13px;
 }
-
 .product .productSlider figure.slick-center img{
     border: 2px solid rgba(0, 0, 0, 0.5);
     transform: scale(1.3);
@@ -546,12 +545,13 @@
 }
 
 .product .productSlider strong{
-    position: relative;
-    top: -15px;
+    position: relative;    
     display: block;
     margin-bottom: 10px;
 }
-
+.product .productSlider figure.slick-center strong{
+    top:-15px
+}
 
 .product .productSlider a{
     display: inline-block;
@@ -573,9 +573,9 @@
 .product .productSlider .slick-dots li button{
     border: none;
     outline: none;
+    background: #f00;
     padding: 0;
     vertical-align: top;
-    background: #f00;
     color: #fff;
     border-radius: 50%;
     width: 20px;
@@ -657,10 +657,11 @@
 }
 
 .tab_content .notice strong{
-    width: 450px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    min-width: 0;    
+    width: 450px;
 }
 
 .right_content li{
@@ -674,7 +675,7 @@
     display: none;
     position: fixed;
     inset: auto 50px 50px auto;
-    z-index: 999;
+    /* z-index: 999; */
 }
 .toTop i{
     padding: 10px;
@@ -686,5 +687,65 @@
 }
 
 
+#footer{
+    background: #333;
+    color:#fff ;
+    line-height: 80px;
+    font-size: 15px;
+}
+
+
+#footer .top{
+    border-bottom: 2px solid #666;
+}
+/* #fff, #ddd 등 검은배경에 라인 색 너무 띄니까 본인색에서 한톤 띄어주기*/
+
+
+
+#footer .top dt, 
+#footer .top dd{
+    display: inline-block;
+    /* padding: 0 15px 0 15px; */
+} 
+
+#footer .top dt::before, 
+#footer .top dd~dd::before{
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px ;
+    height: 12px;   /* 폰트사이즈보다 작아야함 */
+    background:#ddd;
+}
+
+#footer .top dl a{
+ padding: 0 15px 0 15px;
+} 
+
+#footer .top i{
+    font-size: 25px;
+}
+
+#footer .container{
+    justify-content: space-between;
+}
+
+#footer .bottom address{
+    font-style: normal;
+}
+#footer .bottom select{
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #ddd;
+    padding: 5px 15px;
+    border: 1px solid #666
+}
+
+#footer .bottom option{
+    color: #fff;
+    background: #333;
+
+}
 
 
