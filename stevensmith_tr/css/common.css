@@ -97,12 +97,18 @@
 }
 .mainVisual .mainSlider .inner a{
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
     padding: 5px 15px;
     background: #333;
     margin-top: 10px;    
     font-family: 'Gilda Display', serif;
 }
+
+.mainVisual .mainSlider .inner a:hover{    
+    background: #333;
+    color: #fff;
+}
+
 
 .mainVisual .mainSlider .slick-dots{
     position: absolute;
@@ -181,14 +187,14 @@
 .fixedBg {
     width: 1200px;
     margin: 0 auto; 
-    padding: 130px 0;
+    padding: 140px 0;
     text-align: center;
-    color: #333;
+    color: #000;
     background: url(../img/fixedbg.jpg) no-repeat fixed top center / cover ;
 }
 
 .fixedBg h2{
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -201,9 +207,14 @@
 
 .fixedBg a{
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
     border: 1px solid #333;
     padding:  10px 15px;
+}
+
+.fixedBg a:hover{
+    background: #333;
+    color: #fff;
 }
 
 .door{
@@ -217,6 +228,7 @@
 }
 .door .container .pink{
     position: relative;
+    overflow: hidden;
 }
 
 .door .container .pink .bg::after{
@@ -252,6 +264,7 @@
 }
 .door .container .blue{
     position: relative;
+    overflow: hidden;
 }
 
 .door .container .blue .bg::after{
@@ -286,6 +299,7 @@
 }
 .door .container .green{
     position: relative;
+    overflow: hidden;
 }
 .door .container .green .bg::after{
     content: '';
