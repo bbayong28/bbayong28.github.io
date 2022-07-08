@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+
+#header{
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+#header nav ul{
+    display: flex;
+}
+
+#header nav ul li a{
+    padding: 0 15px;
+    font-size: 17px;
+}
+#header nav ul li:last-child a{
+    padding-right: 0;
+}
+
+#header a{
+    display: inline-block;
+}
+
+
+.mainVisual{
+    position: relative;
+}
+
+.mainVisual .mainSlider{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainVisual .mainSlider figure{
+    position: relative;
+    height: 620px;
+}
+
+.mainVisual .mainSlider .item01{
+    background: url(../img/mainvisual01.png) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .item02{
+    background: url(../img/mainvisual02.png) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .item03{
+    background: url(../img/mainvisual03.png) no-repeat center center / cover;
+}
+
+.mainVisual .mainSlider .inner{     
+    position: absolute;    
+    text-align: right;    
+    transform: translate(10%,-50%);    
+    color: #fff;
+
+}
+
+.mainVisual .mainSlider .item01 .inner{  
+    text-align: left;
+    top: 75%;
+    left: 5%;
+}  
+
+.mainVisual .mainSlider .item02 .inner{
+    top: 50%;
+    right: 7%;
+}
+.mainVisual .mainSlider .item03 .inner{
+    top: 75%;
+    right: 8%;
+}
+.mainVisual .mainSlider .item01 .inner{    
+    position: absolute;
+    text-align: left;
+}  
+
+.mainVisual .mainSlider figure .inner h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'Gilda Display', serif;
+}
+
+.mainVisual .mainSlider .inner p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+
+}
+.mainVisual .mainSlider .inner a{
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 15px;
+    background: #333;
+    margin-top: 10px;    
+    font-family: 'Gilda Display', serif;
+}
+
+.mainVisual .mainSlider .slick-dots{
+    position: absolute;
+    inset: auto auto 30px 50% ;
+    transform: translateX(-50%);
+    font-size: 0;
+}
+
+.mainVisual .mainSlider .slick-dots li{
+    display: inline-block;    
+}
+
+.mainVisual .mainSlider .slick-dots button{
+    border-radius: 50%;
+    outline: none;
+    border:  none;
+    width: 10px;
+    height: 13px;
+    margin: 0 5px;
+    background: rgba(0 , 0, 0, 0.2);
+    border: 1px solid transparent;
+}
+
+.mainVisual .mainSlider .slick-dots li.slick-active button{
+    background: rgb(43, 43, 43);
+}
+
+
+.bestseller_product{    
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.bestseller_product h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+}
+.productSlider{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.productSlider .slick-list{
+    margin:0 -15px;
+}
+.productSlider figure{
+    padding:0 15px;
+}
+.productSlider img{
+    display: block;
+    margin-bottom: 10px;
+}
+.productSlider p{
+    margin-bottom: 5px;
+}
+
+.productArrows i{
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 50px;
+}
+
+.productArrows i:nth-child(1){
+    margin: 0 0 0 -650px;
+}
+.productArrows i:nth-child(2){
+    margin: 0 0 0 650px;
+}
+
+
+.fixedBg {
+    width: 1200px;
+    margin: 0 auto; 
+    padding: 130px 0;
+    text-align: center;
+    color: #333;
+    background: url(../img/fixedbg.jpg) no-repeat fixed top center / cover ;
+}
+
+.fixedBg h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.fixedBg p{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.fixedBg a{
+    display: inline-block;
+    margin-top: 15px;
+    border: 1px solid #333;
+    padding:  10px 15px;
+}
+
+.door{
+    padding: 100px 0;
+} 
+.door .container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+.door .container .pink{
+    position: relative;
+}
+
+.door .container .pink .bg::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 222, 248);
+    transition: all 0.3s;
+}
+
+.door .container .pink:hover .bg::after{
+    opacity: 0.7;
+}
+.door .container .pink .cont{
+    position: absolute;
+    top: 21.5%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.door .container .pink .cont .txt{
+    font-size: 26px;
+    padding-bottom: 100px;
+}
+.door .container .pink:hover .cont .txt{
+    color: #fff;
+}
+.door .container .blue{
+    position: relative;
+}
+
+.door .container .blue .bg::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(216, 233, 255); 
+    transition: all 0.3s;
+}
+.door .container .blue:hover .bg::after{
+    opacity: 0.7;
+}
+.door .container .blue .cont{
+    position: absolute;
+    top: 21.2%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.door .container .blue .cont .txt{
+    font-size: 28px;
+    padding-bottom: 100px;
+}
+
+.door .container .blue:hover .cont .txt{
+    color: #fff;
+}
+.door .container .green{
+    position: relative;
+}
+.door .container .green .bg::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(233, 255, 225); 
+    transition: all 0.3s;
+}
+.door .container .green:hover .bg::after{
+    opacity: 0.7;
+}
+.door .container .green .cont{
+    position: absolute;
+    top: 21%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.door .container .green:hover .cont .txt{
+    color: #fff;
+}
+.door .container .green .cont .txt{
+    font-size: 26px;
+    padding-bottom: 100px;
+}
+
+
+
+.etc_product{    
+    position: relative;
+    text-align: center;
+}
+
+.etc_product h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.etctSlider{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.etctSlider .slick-list{
+    margin:0 -15px;
+}
+.etctSlider figure{
+    padding:0 15px;
+}
+
+.etctSlider img{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.etctSlider p{
+    margin-bottom: 5px;
+}
+
+
+.etcArrows i{
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 50px;
+}
+
+.etcArrows i:nth-child(1){
+    margin: 0 0 0 -650px;
+}
+.etcArrows i:nth-child(2){
+    margin: 0 0 0 650px;
+}
+
+.topSlider{
+    text-align: center;
+    padding: 100px 100px;
+    width: 1900px;
+}
+
+.topSlider .inbox a img{
+    margin: 0 auto;
+}
+.topSlider .inbox a img:last-child{
+    display: none;
+}
+.topSlider .inbox a:hover img:last-child{
+    display: block;
+}
+.topSlider .inbox a:hover img:first-child{
+    display: none;
+}
+
+#footer .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer .container .top{
+    padding: 20px 0;
+    display: flex;
+
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+#footer .container .top div{
+    flex: 1;
+}
+#footer .container strong{
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(82, 82, 82);
+    margin-bottom: 15px;
+}
+#footer .container p{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(82, 82, 82);
+    margin-bottom: 5px;
+}
+#footer .container .bottom{
+    border-top: 1px solid rgb(205, 205, 205) ;
+    padding: 20px 0 10px 0;
+}
+
+.toTop{
+    /* display: none; */
+    position: fixed;
+    inset: auto 50px 50px auto;
+    /* z-index: 999; */
+}
+.toTop i{
+    padding: 10px;
+    background: rgba(50, 50, 50, 0.5);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
