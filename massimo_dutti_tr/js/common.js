@@ -55,7 +55,8 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,           
         slidesToScroll: 2,          
-        autoplaySpeed:2000,
+        autoplaySpeed: 2000,        
+        asNavFor: '.etcSlideR',
     }); 
     
     $('.etcSlideR').slick({
@@ -65,7 +66,8 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,           
         slidesToScroll: 1,          
-        autoplaySpeed:2000,
+        autoplaySpeed: 2000,        
+        asNavFor: '.etcSlide',
     });
     
 
