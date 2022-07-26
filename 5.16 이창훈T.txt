@@ -1178,7 +1178,46 @@ shadow
 마지막 라인 위아래더 넓혀야함
 푸터라인 길게
 메뉴 bestseller etc 글씨크기 큼
+-------------------------------------------------------------------------
+7/09
+https://www.albertaferretti.com/kr_en/
+https://www.breil.com/it/
+https://www.cartier.com/en-us/home
+https://www.aesop.com/kr/
+https://kr.delvaux.com/ko
+https://emis.kr/
+https://chicor.com/brand/0000000635
+https://sabon.co.kr/
+https://www.isseymiyake.com/en/brands/isseymiyake/looks
+https://www.studiotomboy.com/ko/main
+https://www.acnestudios.com/kr/ko/home
+https://www.innisfree.com/kr/ko/Main.do
+https://abib.com/
+https://www.cliocosmetic.com/ko/index.asp
+https://www.sulwhasoo.com/kr/ko/index.html
+https://www.wconcept.co.kr/ISSUE/17598
+https://www.isoi.co.kr/?NaPm=ct%3Dl5dt1qvk%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3D99dca6ac45e4fea62529efc3a6d24a764b547acc
+https://www.jestina.co.kr/
+https://dalba.co.kr/goods/goods_view.php?goodsNo=1000000043
 
+
+https://www.espoir.com/ko/main.do
+https://paulandjoe.com/en
+https://hince.co.kr/product/shop/collection
+
+
+https://www.albertaferretti.com/kr_en/
+https://www.breil.com/it/
+시코르 검색창
+espoir의 wqater velvet look 부분
+https://kr.delvaux.com/ko 애니메이션
+https://emis.kr/ 푸터 위 슬라이드 글
+https://www.studiotomboy.com/ko/main 배경글씨
+
+https://abib.com/ 까륶ㅁ
+https://www.isoi.co.kr/?NaPm=ct%3Dl5dt1qvk%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3D99dca6ac45e4fea62529efc3a6d24a764b547acc
+이닉상품추천
+https://dunststudio.com/index.html 열릴때로딩
 
 -------------------------------------------------------------------------
 7/11
@@ -1231,7 +1270,121 @@ this 는 윈도우를 가르킨다.
 
 반응형 다단메뉴
 
+뉴공간 더 붙이기
+더 돋보이게하기
+컨데이너를 1230으로하기 - 라인맞추기
+푸터라인
+instore  밑에 간격
+탐스크롤에 화살표가 큼 글자에비해
+이미지 깨끗한거주고  검정색!!!!!이로 가리기
+검정색으로 알파값빼서 세련되게 - 제춤밑에
+main.css?ver=1.1 버전관리하는 방법
+header 
+div
+video해서
+div에 감싸고 100vh써서 overflow hidden
+footer 에 dl dt dd 
+figure 안에img만 있으면 div로 figureㅇ느 시멘틱태그라 남발하는게아님
 
+autoplay 있으면 화살표 빼고 없으면 화살표넣기
+
+
+-------------------------------------------------------------------------
+7/18
+폰트자유롭게
+메인뺴고 섹션3개
+주제 자유록베
+하럭없으면 주제 - 가족(웨딩 장례식 애견,,)
+
+https://samuelsmalls.co.kr/product/list.html?cate_no=116
+https://innometsa.com/
+https://www.rareraw.com/category/product/286/
+https://gongone.co.kr/
+
+-------------------------------------------------------------------------
+7/19
+set time 몇초후에 실행하라
+set interval 몇초후 실행 몇초후 실행 반봅 - 슬라이드에 주로 쓰임
+
+생성자함수 객체를 찍어내는데 씀.
+new Shin 새롭게 생성자 함수를 만들었을 때 첫글자 대문자로 쓰는게 룰이다
+
+https://kaareklint.co.kr/
+https://verpan.com/
+http://www.byheydey.com/
+https://www.kare-korea.com/shop/main/index.php
+https://www.essasofa.co.kr
+
+
+-------------------------------------------------------------------------
+7/25
+
+npm -v
+
+D드라이브에 폴더하나 만들기
+깃이랑 연동시켜주기
+
+.md 마크다운 언어
+
+# 
+## 
+###
+//h1 h2 h3
+폴더만들면 낯가려서 이과정을 해줘야함
+npx creat-react-app react00(다 들어가있는 프레임워크를 하나만든다)
+
+cd.. 
+cd react00 
+cd.. 
+npm start
+
+홈페이지하나 만들어줌.
+
+gitignore 는 깃에 올리지마라는 파일들
+용량이 많다
+깃에 있는거다운 받을 때 어ㅉ럮쩌쩌꼬
+
+node modules에 저장해(setting file들 ex) css js,,,,,,,)
+작업은 src 폴더에서 함.
+but 이미지 같은 소스들은 public 폴더에 넣어서 사용
+App.js 에서 만들어주면 홈페이지가 나올거다.
+App.js 만들면 index.js <App />에 있다.
+js length? apps? 
+
+
+<>
+   <h1>제목1</h1>
+   <h2>제목2</h2>
+</>
+
+
+<div>
+   <h1>제목1</h1>
+   <h2>제목2</h2>
+</div>
+
+
+부모가 태그를 감싸줘야함. div든 뭐든 빈거 - 프래그먼트
+
+
+App.js index.js빼고 다 지움.
+
+manifest.json  아이콘이름 뿌려주는 파일
+
+
+App.js에 
+const App = () => { 
+  console.log('하하하하하')
+  return <h1>제목1</h1>
+}
+
+
+export default App;
+
+라고 입력하면 콘솔창에 2번찍힘.
+
+하하하하하
+하하하하하 
 
 
 
