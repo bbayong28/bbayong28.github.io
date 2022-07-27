@@ -1,0 +1,97 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.TopBanner{
+    background: #f8f8f8;
+    padding: 3rem 0 3rem 0;
+}
+.TopBanner .container{
+    position: relative;
+    display: block;
+} 
+
+.TopBanner h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.TopBanner p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.TopBanner a{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 2px 2rem 5px 2rem;
+    transform: translateY(-2px);
+    margin: 0 0 0 2rem;
+}
+
+.TopBanner i{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 1000px){
+    
+.container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+}
+
+.TopBanner{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    right: 1.5rem;
+    transform:translateY(-50%);
+    background: #f8f8f8;
+    padding: 3rem 0 3rem 0;
+}
+.TopBanner .container{
+    position: static;
+    display: block;
+    padding: 0 2rem 0 2rem;
+} 
+
+.TopBanner h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.TopBanner p{
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.TopBanner a{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 2px 2rem 5px 2rem;
+    transform: translateY(0);
+    margin: 2rem 0 0 0;
+}
+
+.TopBanner i{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+}

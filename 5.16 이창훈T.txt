@@ -1386,31 +1386,95 @@ export default App;
 하하하하하
 하하하하하 
 
+-------------------------------------------------------------------------
+7/25
+
+npx create-react-app react01
+cd react01
+cd..(cd.. - 부모폴더로 올라가라 생략가능 그냥 해봄)
+cd react01
+npm start
+
+
+집에서 하려면 노드모듈스가 없다 어떻게?
+
+실제로 뿌려주는 소스 public
+src
+html파일 하나다
+index.js가 html움직임.
+
+
+<경로>
+/ 는 root 최상위
+./ 바로위
+
+
+spa singlepageapplication??
+client site??
+randering??
+mpa markpagerandering??
+모듈화한다는것은 따로 떼서 붙여넣는거 
 
 
 
+cd react01
+npm run start
 
 
 
+Header.js 에 만들고 마지막에  export default Header; 적고
+ App.js파일와서 import 해주기 
+ 
+
+jsx 안에서 뭔가 할때는 if 문을 안씀 
+return 안에 뭘쓰면 문자로 받아들임 문자로 안 받아드들이게 하려고 중괄호 쳐줌(  {console.log(props)}  이부분)
+const Main = (props) => { 
+    return (
+        <main>
+            {console.log(props)}
+        </main>
+    )
+}
+props는 객체다
 
 
 
+cd change directory
+
+props 데이터를 내려줄수있고 데이터를 연결하는 함수도 내려줄수있음
+그럼 그 함수가 자식에서 변경될 수 있다 그때 데이타가 변경된건 위로 올림
 
 
+-------------------------------------------------------------------------
+7/27
+
+react01파일에서 쳐야함
+cd react01
+cd .. 
+일괄 작업을 끝내시겠습니까 (Y/N)? y
+PS D:\react신화영\react01> cd ..
+PS D:\react신화영> npx create-react-app react02
+npx create-react-app react02
+cd react02
+npm start
 
 
+첫단어가 대문자인거는 컴포넌트다. 여기서 만들어진거다.
+컴포넌트에 스타일style={{color : 'red'}} 주면 안됨 (<Header style={{color : 'red'}} />)
+컴포넌트안에 태그에 주면 됨.(<a href="" style={{color : 'red', fontSize:'40px'}}>menu01</a>)
+대신 세미콜론; 안되고 -같은건 없애고 대문자로 바꿔줘야 함.(color : 'red', fontSize:'40px')
 
+css 반응형 올려놓으면 반응이 바로안됨
+<script src="./js/main.js"></script> 에 ?ver=1.0를 붙여서
+<script src="./js/main.js?ver=1.0"></script>이렇게한다.
 
+position이 없어져야하면 statix
+그 위치를 고수해야하면 px아니고 %로 해야함
 
-
-
-
-
-
-
-
-
-
+반응형할때 
+flex
+flex-direction: column;
+width auto
 
 
 
