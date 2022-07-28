@@ -1,0 +1,66 @@
+html { 
+    font-size: 10px; 
+} 
+/* 반응형 도입용 rem 을 사용하기 위해 설정하였음. 1.6rem = 16px */
+body { 
+    font-size: 1.6rem; 
+} 
+/* 규칙 position, display를 앞에 */
+.Wrapper { } 
+
+/* Header START */
+.container {
+     display: flex; 
+    width: 120rem; 
+    margin: 0 auto; 
+} 
+/* TopBanner Start */
+.TopBanner {
+     background: #f8f8f9; 
+    padding: 3rem 0 3rem 0; 
+} 
+.TopBanner .container { 
+    position: relative; display: block; 
+} 
+.TopBanner h2 {
+     font-size: 2.5rem; 
+    font-weight: 700; margin: 0 0 1rem 0;
+ } 
+.TopBanner p {
+     font-size: 1.3rem; 
+} 
+.TopBanner a {
+     display: inline-block; 
+    border: 1px solid #333; 
+    padding: 2px 2rem 5px 2rem; 
+    transform: translateY(-2px); margin: 0 0 0 2rem;
+ } 
+.TopBanner i {
+     position: absolute; 
+    top: 0;
+     right: 0;
+ } 
+
+.header{
+    line-height: 10rem;
+}
+
+.header h1{
+    font-size: 0;
+}
+
+.gnb{
+    margin: 0 0 0 auto;
+}
+.gnb a{
+    display: block;
+}
+
+.gnb>ul{
+    display: flex;
+    gap: 3rem;
+}
+
+#searchForm{
+    margin: 0 0 0 2rem;
+}

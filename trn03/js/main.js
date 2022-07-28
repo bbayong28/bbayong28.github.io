@@ -1,5 +1,11 @@
 $(function () {
+
     $('.TopBanner i').on('click', function () {
-        $('.TopBanner').slideUp();
+        $('.TopBanner').hide();
+    });
+
+    $('.pop button').on('click', function () {
+        $(this).parent().hide();
     })
+
 })
