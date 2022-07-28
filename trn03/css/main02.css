@@ -55,12 +55,50 @@ body {
 .gnb a{
     display: block;
 }
+.gnb a::first-letter{
+    color: #f00;
+}
 
 .gnb>ul{
     display: flex;
     gap: 3rem;
 }
 
+.gnb>ul>li{
+    position: relative;
+}
+.gnb>ul>li~li::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: -1.5rem;
+    width: 1px;
+    height: 1.2rem;
+    background: #ddd;
+    transform: translateY(-50%);
+
+}
+
 #searchForm{
     margin: 0 0 0 2rem;
+}
+
+#searchForm input[name='search']{
+outline: none;
+border: none;
+border-bottom:1px solid #333 ;
+color: #f00;
+}
+#searchForm input[name='search']::placeholder{
+    color: #ddd;
+}
+#searchForm input[name='search']:focus::placeholder{
+    color: transparent;
+}
+
+#searchForm button{
+    outline: none;
+    border: none;
+    background: transparent;
+
 }
