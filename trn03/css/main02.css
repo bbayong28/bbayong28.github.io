@@ -102,3 +102,73 @@ color: #f00;
     background: transparent;
 
 }
+/* 
+h5{
+    display: flex;
+    align-items: center;
+}
+
+h5::after{
+    content: '';
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: #f00;
+    margin-left: 30px;
+}
+
+
+h6{
+    display: flex;
+    align-items: center;
+}
+h6::before{
+    content: '';
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: #f00;
+    margin-right: 30px;
+}
+
+h6::after{
+    content: '';
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: #f00;
+    margin-left: 30px;
+} */
+
+
+
+.main_visual {
+    position: relative;
+}
+.main_visual .main_slider{
+    height: 60rem;
+}
+.main_slider .itm01{
+background: url(../img/mainvisual01.jpg);
+}
+
+.main_slider .itm02{
+background: url(../img/mainvisual02.jpg);
+}
+
+.main_slider .itm03{
+background: url(../img/mainvisual03.jpg);
+}
+
+.main_slider .itm04{
+background: url(../img/mainvisual01.jpg);
+}
+
+.main_visual .slogan{
+position: absolute;
+display: block;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+}
