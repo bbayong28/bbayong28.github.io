@@ -128,12 +128,20 @@ $(function () {
             console.log('now index :::', swiper.realIndex);
     });
  */
-        
-    $('.tab_menu li span').on('click', function () { 
-        var idx = $(this).index();
-        console.log(idx);
-        $(this).addClass('active').siblings().removeClass('active').closest('figure').find('.tab_menu li span').eq(idx).addClass('active').siblings('li').removeClass('active');
-        return false;        
+    
+    $('.tab_menu li').on('click', function () { 
+        const w_w = $(window).width();
+        //console.log('dddd');
+        //console.log(w_w);
+        if (w_w <= 1200) { 
+            console.log(w_w);
+        }
+        // if ($(window).width() < 769) {
+        //     var idx = $(this).index();
+        //     console.log(idx);
+        //     $(this).addClass('active').siblings().removeClass('active').closest('figure').find('.tab_menu li span').eq(idx).addClass('active').siblings('li').removeClass('active');
+        //     return false;
+        // }
     });
      
 
