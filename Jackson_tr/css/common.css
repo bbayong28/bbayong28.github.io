@@ -874,17 +874,10 @@ h2::after{
 .product_slide li a img{
     width:33.33%;
 }
-.review .top{
-    display: flex;
-    /* justify-content: space-between; */
-}
+
 .review img{
     max-width:100%;
     flex:1;
-}
-.review .bottom{
-    display: flex;
-    /* justify-content: space-between; */
 }
 .reviewArrow i{
     position: absolute;
@@ -902,13 +895,7 @@ h2::after{
 }  
 
 @media (max-width:768px){
-    .review .top{
-        display: flex;
-        justify-content: space-between;
-    }
-    .review .bottom{
-        display: none;
-    }
+    
     .reviewArrow i{
         position: none;
     }
