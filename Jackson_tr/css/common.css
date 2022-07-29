@@ -833,7 +833,7 @@ h2::after{
     }
 
     .businessArrow i:nth-child(1) {
-        margin: -125px 0 0 0;
+        margin: -19% 0 0 0;
         left: 0;
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -843,7 +843,7 @@ h2::after{
         padding: 3px 5px 3px 3px;
     }
     .businessArrow i:nth-child(2) {
-        margin: -125px 0 0 0;
+        margin: -19% 0 0 0;
         left: auto;
         right: 0;
         background: rgba(0, 0, 0, 0.5);
