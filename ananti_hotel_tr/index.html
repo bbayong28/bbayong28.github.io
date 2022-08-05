@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+
+<body>
+
+    <div class="Wrap">
+        <header id="header">
+            <div class="container">
+                <div class="h_top">
+                    <div class="top_left">
+                        <nav>
+                            <ul>
+                                <li><a href="">통합사이트</a></li>
+                                <li><a href="">체인현황</a></li>
+                                <li><a href="">고객지원</a></li>
+                                <li><a href="">매거진</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="top_right">
+                        <nav>
+                            <ul>
+                                <li><a href="">로그인</a></li>
+                                <li><a href="">회원가입</a></li>
+                                <li><a href="">멤버십</a></li>
+                                <li><a href="">예약조회</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <h1>
+                    <a href="">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">지점소개</a></li>
+                            <li><a href="">프로모션</a></li>
+                            <li><a href="">스페셜오퍼</a></li>
+                            <li><a href="">세미나 & 웨딩</a></li>
+                            <li><a href="">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="mainVisual">
+                <div class="mainSlider">
+                    <figure class="itm05">
+                        <div class="inner">
+                            <p>맛있고 건강한 것만 허락하는 피트 바</p>
+                            <a href="">자세히보기</a>
+                        </div>
+                    </figure>
+                    <figure class="itm01">
+                        <div class="inner">
+                            <p>과거와 미래, 그 사이의 시간이 머무는 라운지</p>
+                            <a href="">자세히보기</a>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <p>바다 위 온천에서 누리는 환상적인 시간,
+                                워터하우스</p>
+                            <a href="">자세히보기</a>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <p>작지만 큰 세계
+                                테이스티저니</p>
+                            <a href="">자세히보기</a>
+                        </div>
+                    </figure>
+                    <figure class="itm04">
+                        <div class="inner">
+                            <p>우리나라 최고의
+                                오션 인피니티 풀</p>
+                            <a href="">자세히보기</a>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="reservation_box">
+                    <div class="name">
+                        <strong>방문 호텔 또는 리조트명 <i class="xi-maker"></i></strong>
+                        <select style="font-size:20px; font-weight: 300; color: #666;">
+                            <option value="" checked>룸 타입 선택</option>
+                            <option>펜트하우스</option>
+                            <option>테라스 풀하우스 A</option>
+                            <option>테라스 풀하우스 B</option>
+                            <option>씨사이드 A</option>
+                            <option>씨사이드 B</option>
+                            <option>씨사이드 스페셜</option>
+                            <option>프라이빗 레지던스A</option>
+                            <option>프라이빗 레지던스B</option>
+                            <option>커넥팅 하우스</option>
+                            <option>아난티 패밀리 마운틴</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <strong>체크인&체크아웃 <i class="xi-browser-text"> </i></strong>
+                        <div class="checkin_out">
+                            <input type="text" class="datepicker" data-language="en" data-multiple-dates="3"
+                                data-multiple-dates-separator=", " data-position="top left" size="5"
+                                style="font-size:18px; font-weight: 300; color: #666;"> &nbsp -
+                            &nbsp;
+                            <input type="text" class="datepicker01" data-language="en" data-multiple-dates="3"
+                                data-multiple-dates-separator=", " data-position="top left" size="5"
+                                style="font-size:18px; font-weight: 300; color: #666;">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="guest_room">
+                            <strong>객실</strong>
+                            <select style="font-size:18px; font-weight: 300; color: #666;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <div class="adult">
+                            <strong>성인</strong>
+                            <select style="font-size:18px; font-weight: 300; color: #666;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                        <div class="kid">
+                            <strong>어린이</strong>
+                            <select style="font-size:18px; font-weight: 300; color: #666;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="re_button">
+                        <a href="">예약하기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="room_type">
+                <div class="container">
+                    <h2>아난티 코브 객실</h2>
+                    <div class="typeSlide">
+                        <div class="type">
+                            <div class="left">
+                                <h3>TERRACE POOL</h3>
+                                <div class="ex">
+                                    <span>완벽한 프라이버시를 위한 공간, 펜트하우스.</span>
+                                    <span>모든 객실에서 아름다운 부산의 바다를 만나보세요.</span>
+                                </div>
+                                <div class="info">
+                                    <p><span class="bold">크기 </span> 350㎡ (침실2, 거실1, 욕실2, 프라이빗 풀 1)</p>
+                                    <p><span class="bold">정원 </span> 4명 (350㎡)</p>
+                                    <p><span class="bold">객실수 </span> 72</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="./img/terrace_pool.png" alt="">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="left">
+                                <h3>RESIDENCE</h3>
+                                <div class="ex">
+                                    <span>프라이빗 레지던스는 조용하고 아늑한 분위기에서</span>
+                                    <span>휴식을 취할 수 있도록 배려한 타입입니다.</span>
+                                </div>
+                                <div class="info">
+                                    <p><span class="bold">크기 </span> 152㎡ (침실 1, 거실 1, 욕실 1)</p>
+                                    <p><span class="bold">정원 </span> 2명 (152㎡)</p>
+                                    <p><span class="bold">객실수 </span> 52</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="./img/privite.png" alt="">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="left">
+                                <h3>SEA SIDE</h3>
+                                <div class="ex">
+                                    <span>모든 것이 갖추어진 완벽한 공간.</span>
+                                    <span>단 두 개밖에 없는 특별하고 완벽한 공간입니다.</span>
+                                </div>
+                                <div class="info">
+                                    <p><span class="bold">크기 </span> 840㎡ (침실 3, 거실 1, 욕실 3, 다이닝 룸 1, 프라이빗 풀 1)</p>
+                                    <p><span class="bold">정원 </span> 6명 (840㎡)</p>
+                                    <p><span class="bold">객실수 </span> 2</p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="./img/seaside.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typeArrow">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="build">
+                <div class="container">
+                    <h2>아난티 코브 이용시설</h2>
+                    <div class="buildSlider">
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build01.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>워터하우스</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+
+                                <span> <i class="xi-browser-text"> 2022년 4월 30일(토) ~ 9월 12일(월)</i></span>
+                                <span> <i class="xi-alarm-o"> 1부 09:00 ~ 12:00 / 2부 13:00 ~ 18:00</i></span>
+                                <span> <i class="xi-call"> 051-604-7000</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build02.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>워터하우스</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+                                <span> <i class="xi-browser-text"> 2022년 4월 30일(토) ~ 9월 12일(월)</i></span>
+                                <span> <i class="xi-alarm-o"> 1부 09:00 ~ 12:00 / 2부 13:00 ~ 18:00</i></span>
+                                <span> <i class="xi-call"> 051-604-7000</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build03.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>워터하우스</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+                                <span> <i class="xi-browser-text"> 2022년 4월 30일(토) ~ 9월 12일(월)</i></span>
+                                <span> <i class="xi-alarm-o"> 1부 09:00 ~ 12:00 / 2부 13:00 ~ 18:00</i></span>
+                                <span> <i class="xi-call"> 051-604-7000</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build04.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>워터하우스</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+                                <span> <i class="xi-browser-text"> 2022년 4월 30일(토) ~ 9월 12일(월)</i></span>
+                                <span> <i class="xi-alarm-o"> 1부 09:00 ~ 12:00 / 2부 13:00 ~ 18:00</i></span>
+                                <span> <i class="xi-call"> 051-604-7000</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build05.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>워터하우스</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+                                <span> <i class="xi-browser-text"> 2022년 4월 30일(토) ~ 9월 12일(월)</i></span>
+                                <span> <i class="xi-alarm-o"> 1부 09:00 ~ 12:00 / 2부 13:00 ~ 18:00</i></span>
+                                <span> <i class="xi-call"> 051-604-7000</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="introduce">
+                            <div class="left">
+                                <img src="./img/build06.png" alt="">
+                            </div>
+                            <div class="right">
+                                <h3>비지니스 센터</h3>
+                                <div class="ps">
+                                    <p>컬러와 패턴을 바꾸는 실내풀과 미로처럼 펼쳐지는 정글 속 온천, </p>
+                                    <p>그리고 감각적인 음악은 우리에게 새로운 경험을 선사합니다.</p>
+                                </div>
+                                <span> <i class="xi-browser-text"> 연중무휴</i></span>
+                                <span> <i class="xi-alarm-o"> 24시간</i></span>
+                                <span> <i class="xi-call"> 055-860-0100</i></span>
+                                <a href="">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buildArrow">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+
+                </div>
+            </section>
+            <section class="membership">
+                <div class="container">
+                    <h2>아난티 통합 멤버십</h2>
+                    <div class="box">
+                        <div class="inner_box">
+                            <div class="total">
+                                <img src="./img/gift_box.png" alt="">
+                                <div class="text">
+                                    <strong>통합멤버십 전용상품</strong>
+                                    <em>회원님을 위한 전용상품과 이벤트</em>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <img src="./img/leisure_golf.png" alt="">
+                                <div class="text">
+                                    <strong>리조트·골프 특가혜택</strong>
+                                    <em>아난티, 힐튼 온라인 최저가</em>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <img src="./img/point.png" alt="">
+                                <div class="text">
+                                    <strong>포인트(Ananti Point)</strong>
+                                    <em>Ananti Point 0.5% 적립</em>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>아난티 통합멤버십에 가입하고, 골프·레저를 누리세요!</p>
+                        <div>
+                            <a href="">통합멤버십 자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event">
+                <div class="container">
+                    <h2>이벤트</h2>
+                    <div class="eventSlider">
+                        <figure>
+                            <a href="">
+                                <img src="./img/event01.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="./img/event02.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="./img/event03.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="./img/event07.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="./img/event05.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <img src="./img/event06.png" alt="">
+                            </a>
+                            <div>
+                                <div class="event_info">
+                                    <h3>8월 헬스&라이프 프로그램</h3>
+                                    <p>2022년 08월 01일(월) ~ 2022년 08월 31일(일)</p>
+                                </div>
+                                <div class="hashtag_list">
+                                    <li><a href="">#아난티코브</a></li>
+                                    <li><a href="">#아난티코브두댓</a></li>
+                                    <li><a href="">#두댓</a></li>
+                                    <li><a href="">#야외액티비티</a></li>
+                                    <li><a href="">#아난티코브_pick</a></li>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="eventArrow">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <h2>아난티 뉴스</h2>
+                    <table>
+                        <tbody>
+                            <tr class="top">
+                                <th>아난티 코브</th>
+                                <td><a href="">워터파크ㆍ 아쿠아하우스 정기휴장 안내</a></td>
+                                <td class="last">2022.02.19</td>
+                            </tr>
+                            <tr class="middle">
+                                <th>아난티 힐튼</th>
+                                <td><a href=""> 5월 1일 미라클모닝 '해돋이 라이브' 시청 인증 이벤트 당첨자 발표 안내</a></td>
+                                <td class="last">2022.02.19</td>
+                            </tr>
+                            <tr class="bottom">
+                                <th>아난티 강남</th>
+                                <td><a href=""> 객실 리뉴얼 공사 안내</a></td>
+                                <td class="last">2022.02.19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer id="footer">
+            <div class="top">
+                <div class="container">
+                    <h4>
+                        <img src="./img/logo_W.png" alt="">
+                    </h4>
+                    <ul>
+                        <li><a href="#!">개인정보처리방침</a></li>
+                        <li><a href="#!">이용약관</a></li>
+                        <li><a href="#!">고객센터</a></li>
+                        <li><a href="#!">아난티 어매니티</a></li>
+                        <li><a href="#!">주소 및 전화</a></li>
+                    </ul>
+                    <div class="sns">
+                        <a href="#!"><i class="xi-kakaotalk"></i></a>
+                        <a href="#!"><i class="xi-instagram"></i></a>
+                        <a href="#!"><i class="xi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="in_top">
+                        <span>(주) 아난티(ANANTI)</span>
+                        <span>대표자명 : 이만규, 김종호, 이수현</span>
+                        <span>아난티 캐비네 : 서울시 강남구 논현로 730 | En. 730, Nonhyeon-ro, Gangnam-gu, Seoul, Korea</span>
+                        <span>대표전화 : 1877-8448</span>
+                        <span>대표전화 : 1877-8448</span>
+                        <span>사업자 등록번호 : 134-81-07135</span>
+                        <span>이메일 : ananti@ananti.kr</span>
+                    </div>
+                    <div class="link">
+                        <select id="linkSite" style="font-size:13px; font-weight: 500; background:#333; color:#ddd;">
+                            <option value="">FAMILY SITE</option>
+                            <option value="https://naver.com">NAVER</option>
+                            <option value="https://daum.net">DAUM</option>
+                            <option value="https://google.com">GOOGLE</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

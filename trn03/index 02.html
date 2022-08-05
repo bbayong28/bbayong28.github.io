@@ -1,3 +1,8 @@
+<!-- 
+        <h5>my name is shin my name is shin my name is shin my name is shin my name is shin</h5>
+        <h6>my name is park</h6> 
+    -->
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -5,84 +10,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="rem사용, jquery사용...">
+    <title>반응형 홈페이지 제작01</title>
+    <meta name="description" content="rem사용, jquery사용..." />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.css">
-    <link rel="stylesheet" href="./css/main02.css?ver=1.0">
-    <!-- Script START -->
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css?ver=1.0">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="./js/main02.js?ver=1.0"></script>
-    <!-- 캐쉬로 저장돼 있는 css, js를 변경하기위해 붙이는 버전 ?ver=1.0 -->
+    <script src="./js/main.js?ver=1.0"></script>
+    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
 </head>
 
 <body>
-</body>
-<div class="Wrapper">
-    <div class="TopBanner">
-        <div class="container">
-            <h2>JEWELLERY COLLECTION EVENT</h2>
-            <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.<a href="">more</a>
-            </p>
-            <i class="xi-close"></i>
+    <div class="Wrapper">
+        <div class="TopBanner">
+            <div class="container">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. <a href="">more</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
         </div>
+
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./img/grafflogo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="">하이주얼리</a></li>
+                        <li><a href="">주얼리 컬렉션</a></li>
+                        <li><a href="">컬렉션 &amp; 브라이덜 </a></li>
+                        <li><a href="">웨딩주얼리</a></li>
+                        <li><a href="">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+                <form id="searchForm" action="">
+                    <input type='text' name="search" placeholder="검색어를 입력하세요." required>
+                    <button>
+                        <i class="xi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
     </div>
 
-    <header class="header">
-        <div class="container">
-            <h1>
-                <a href="/">
-                    <img src="./img/grafflogo.png" alt="">
-                </a>
-            </h1>
-            <nav class="gnb">
-                <ul>
-                    <li><a href="">하이주얼리</a></li>
-                    <li><a href="">주얼리 컬렉션</a></li>
-                    <li><a href="">컬렉션 &amp; 브라이덜</a></li>
-                    <li><a href="">웨딩주얼리</a></li>
-                    <li><a href="">특별한 솔리테어</a></li>
-                </ul>
-            </nav>
-            <form id="searchForm" action="">
-                <input type='text' name="search" placeholder="검색어를 입력하세요." required>
-                <button>
-                    <i class="xi-search"></i>
-                </button>
-            </form>
-        </div>
-    </header>
-    <!-- 
-        <h5>my name is shin my name is shin my name is shin my name is shin my name is shin</h5>
-        <h6>my name is park</h6> 
-    -->
-
-    <main>
-        <section class="main_visual">
-            <div class="main_slider">
-                <figure class="itm01"></figure>
-                <figure class="itm02"></figure>
-                <figure class="itm03"></figure>
-                <figure class="itm04"></figure>
-            </div>
-            <div class="slogan container">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="">more</a>
-            </div>
-
-        </section>
-    </main>
-
-</div>
-
-<script>
-    function search() {
-        console.log(search)
-    }
-</script>
+</body>
 
 </html>
