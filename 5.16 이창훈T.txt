@@ -1602,6 +1602,14 @@ Route 로 싸주고
 다 적어줌
 
 
+-------------------------------------------------------------------------
+8/5
+
+.mb10 {margin - bottom: 10px !important}
+.mb15 {margin - bottom: 15px !important}
+.mb20 {margin - bottom: 20px !important}
+
+
 
 
 
