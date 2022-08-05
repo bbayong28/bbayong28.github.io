@@ -1609,7 +1609,11 @@ Route 로 싸주고
 .mb15 {margin - bottom: 15px !important}
 .mb20 {margin - bottom: 20px !important}
 
-
+로고 잘안보여
+라인이나 배경으로 메뉴랑 분리를 시키자
+타이틀 도큐먼트
+파비콘 이제넣기
+qorud tjs
 
 
 
