@@ -1,0 +1,18 @@
+.swiper{
+    height: 600px;    
+}
+
+figure{
+    height: 600px;
+    background: #ddd;
+}
+
+figure.swiper-slide-active{
+    font-size: 100px;
+    transition: 0.5s;
+}
+
+.itm01{
+    background: #ff0;
+}
+

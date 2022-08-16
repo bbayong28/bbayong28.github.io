@@ -1,0 +1,52 @@
+
+.Wrap{
+    position: relative;
+}
+
+#Header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 40px;
+    display: flex;
+    min-width: 1900px;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    line-height: 77px;
+}
+#Header.on{
+    color: #fff;
+    background: rgb(0,0,0,1);
+}
+
+.Gnb ul{
+    display: flex;
+    font-size: 17px;
+    gap: 30px;   
+}
+
+.tel{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.tel i{
+    border:  2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    margin-right: 10px;
+}
+
+.screvent{
+    height: 200vh;
+}
+
+#MainVisual{
+    height: 200vh;
+    background: url(../img/bg_intro01.jpg) repeat-x ;
+}
