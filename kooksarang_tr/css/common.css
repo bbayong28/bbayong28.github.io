@@ -668,8 +668,7 @@ body{
 /********************notice 시작 ********************/
 .notice{
     padding: 100px 0;
-    /* background: #f7f7f7; */
-    background: url(/img/notice_bg.png);
+    background: url(../img/notice_bg.png) no-repeat center center / cover;
 } 
 .notice .container{
     display: flex;
