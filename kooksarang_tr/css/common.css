@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    /* font-family: 'Noto Serif KR', serif; */
+    /* font-family: 'IBM Plex Sans KR', sans-serif; */
+    font-family: 'Noto Sans KR'; 
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px ;
+    margin: 0 auto;
+} 
+
+/********************header 시작 ********************/
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    background: #fff;
+}
+
+.header .gnb a{
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.header .gnb li:hover>a{
+    color: #85B746;
+}
+.header .gnb>ul{
+    display: flex;
+    gap: 60px
+}
+.header .gnb>ul>li{
+    position: relative;
+}
+.header .gnb .smenu{
+    position:absolute; 
+    top: 90px; 
+    left: 50%; 
+    display:none;
+    background: #fff; 
+    line-height: 45px; 
+    width: 150px; 
+    transform: translateX(-50%); 
+    text-align: center;
+    z-index: 999;
+    box-shadow: 1px 1px 3px #333;
+    transition: 1s;
+}
+
+.header .gnb>ul>li>ul>li>a{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header .gnb>ul>li ul li:hover a{
+    background: #85B746;
+
+    color: #fff;
+}
+
+.header .gnb>ul>li:hover .smenu{
+    display: block;
+    transition: 1s;
+}
+
+.m__open{
+    display: none;
+} 
+
+
+@media(max-width:768px){
+    .header{
+        line-height: 100px;
+    }    
+
+    .header .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        right: 0;
+        z-index: 3;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header .gnb{
+        position: fixed; 
+        top: 0; 
+        left: -100%; 
+        background: #fff; 
+        border-right: 1px solid #ddd;  
+        width: calc(100% - 90px); 
+        height: 100vh; 
+        padding: 100px 15px 0 15px; 
+        z-index: 999;
+    }
+
+    .header .gnb.on{
+        left: 0;
+    }
+    .header .gnb>ul {
+        display: flex; 
+        flex-direction: column; 
+        gap: 0;  
+        line-height: 50px;
+    }
+    .header .gnb>ul>li{
+        position: relative; 
+        border-bottom: 1px solid #ddd;
+        font-family: 'Noto Serif KR', serif
+    }
+    .header .gnb .smenu{
+        position:static; 
+        top: 80px; 
+        left: 50%; 
+        display:none; 
+        background: #f1f1f1;   
+        line-height: 35px; 
+        width:auto; 
+        transform: translateX(0); 
+        text-align: center;
+        border: none;    
+        z-index: 999;
+        box-shadow: none;
+    }
+
+    .header .gnb>ul>li:hover .smenu{
+        display: none;
+    }    
+
+    .header .gnb li:hover>a {
+        color: #333;
+    }
+    .header .gnb>ul>li ul li:hover a{
+        color: #333;
+        background: #f7f7f7;
+    }   
+    .header .gnb>ul>li>ul>li>a{
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    background: #f7f7f7;    
+    }
+    .m__open {
+        position: fixed;
+        inset: 30px 15px auto auto;
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: #85B746;
+        border-radius: 3px;
+        z-index: 1001;
+    }
+    .m__open span {
+        position: absolute;
+        inset: 0 0 0 0;
+        height: 3px;
+        border-radius: 3px;
+        background: #fff;
+        transition: 0.5s;
+    }
+    .m__open span:nth-child(1) {
+        inset: 8px 5px 0 5px;
+    }
+    .m__open span:nth-child(2) {
+        inset: 17px 5px 0 5px;
+    }
+    .m__open span:nth-child(3) {
+        inset: 17px 5px 0 5px;
+    }
+    .m__open span:nth-child(4) {
+        inset: 27px 5px 0 5px;
+    }
+    .m__open.on span:nth-child(1) {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    .m__open.on span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    .m__open.on span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    .m__open.on span:nth-child(4) {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
+/********************header 끝 ********************/
+
+/********************mainVisual 시작 ********************/
+
+.mainVisual {
+    position: relative;
+}
+.mainVisual .mainSlider figure {
+    position: relative;
+    height: 70vh;
+}
+.mainVisual .mainSlider .itm01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .itm02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .itm03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center / cover;
+}
+.mainVisual .mainSlider .itm04 {
+    background: url(../img/mainvisual04.jpg) no-repeat center center / cover;
+}
+
+
+
+@media (max-width : 768px){
+    .mainVisual .mainSlider .itm01 {
+    display: none;
+    }
+    .mainVisual .mainSlider .itm02 {
+        display: none;
+    }
+    
+}
+/********************mainVisual 끝 ********************/
+
+/********************introduce 시작 ********************/
+.introduce{
+    padding: 100px 0;
+}
+.introduce img{
+    border-radius: 20px;
+}
+
+.introduce .top{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.introduce .top .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.introduce h3 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.introduce .txt {
+    font-size: 17px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+.introduce p{
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+}
+
+.introduce a{
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #888;
+    color: #333;
+    border-radius: 40px;
+}
+
+.introduce a:hover {
+    color: #fff;
+    background: #85B746;
+    border: 1px solid #85B746;
+}
+.introduce strong {
+    display: inline-block;
+    font-size: 16px;
+    color: #85B746;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.introduce .bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.introduce .bottom .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #000;
+}
+
+@media(max-width:768px){
+    .introduce .top,
+    .introduce .bottom{
+        flex-direction: column;        
+        text-align: center;
+    }
+
+    .introduce .top .right,
+    .introduce .bottom .left{
+        text-align: center;
+    }
+    .introduce .bottom .left {
+        order: 1;
+    }
+ 
+    .introduce strong {
+        display: inline-block;
+        font-size: 14px;
+        color: #85B746;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .introduce h3 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    .introduce .txt {
+        font-size: 17px;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    .introduce p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .introduce a{
+        display: inline-block;
+        padding: 15px 35px;
+        font-size: 14px;
+        font-weight: 500;
+        background: #fff;
+        border: 1px solid #888;
+        color: #333;
+        border-radius: 40px;
+    } 
+
+}
+
+
+/********************introduce 끝 ********************/
+/********************company 시작 ********************/
+
+.company{
+    padding-bottom: 50px;
+    background: url(../img/company_bg.jpg) no-repeat top center / cover;
+    text-align: center;
+    background-size: 100% 60%;
+    font-family: 'Noto Serif KR', serif;
+}
+.company .container .img{
+    top: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.company .container .talk h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+
+.company .container .talk p{
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 6px;
+}
+@media (max-width : 768px) {
+    .company .container .talk h3{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 17px;
+    }
+
+    .company .container .talk p{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+}
+/********************company 끝 ********************/
+/********************menu시작 ********************/
+.menu{
+    padding: 100px 0;
+    text-align: center;
+    background: #f7f7f7;
+}
+.menu h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: 'Noto Serif KR', serif;
+}
+
+/* .menu .txt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #000;
+    padding: 15px; 
+    text-align: center;
+}  */
+
+
+
+.tabMenu{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.tabMenu>li {
+    font-size: 15px;
+    font-weight: 300;    
+}
+
+.tabMenu>li>a {
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 20px;
+    background:rgb(241, 241, 241) ;
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+}
+.tabMenu>li.on a {
+    background:#85B746 ;
+    color: #fff;
+}
+
+.kind li{
+    display: none;
+}
+.kind li.on{
+    display: block;
+}
+.product_page .top{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.product_page .bottom{
+    display: flex;    
+    gap: 30px;
+    justify-content: space-between;
+}
+.kind img {
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.kind .txt {
+    text-align: left;
+}
+
+.kind .txt p {
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #85B746;
+    font-weight: 400;
+}
+
+.kind .txt strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.kind .txt span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.kind .txt em {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+@media(max-width:768px) {
+    .menu h3{
+        text-align: center
+        ;
+    }
+    .tabMenu{
+        gap: 13px;
+        justify-content: center;
+    }
+    .tabMenu>li>a {
+        font-size: 14px;
+    }
+    .kind .txt {
+        text-align: center;
+    }
+    .product_page .top {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+    }
+    
+    .kind li .product_page .top>a{  
+        display: block;      
+        width: 45%;
+    } 
+
+    .product_page .bottom {
+        display: none;
+    }
+
+}
+/********************menu 끝 ********************/
+/********************jesa 시작 ********************/
+.jesa {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.jesa h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.jesaSlider .slick-list {
+    margin: 0 -15px;
+}
+
+.jesaSlider figure {
+    padding: 0 15px;
+}
+
+.jesaSlider img {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.jesaSlider p {
+    margin-bottom: 5px;
+}
+
+.jesaSlider .txt {
+    text-align: left;
+    
+}
+
+.jesaSlider .txt strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.jesaSlider .txt span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.jesaSlider .txt em {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;    
+}
+
+.jesaArrow i {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 60px;
+}
+
+.jesaArrow i:nth-child(1) {
+    margin: 0 0 0 -680px;
+}
+
+.jesaArrow i:nth-child(2) {
+    margin: 0 0 0 680px;
+}
+
+@media(max-width:768px) {
+    .jesa {
+        padding: 80px 0;
+    }
+
+    .jesa h3 {
+        text-align: center;
+    }
+
+    .jesaSlider img {
+        display: block;
+        width: 90%;
+        height: 90%;
+        margin: 0 auto 20px auto;
+    }
+
+    .jesaSlider .txt {
+        text-align: center;
+    }
+
+    .jesaArrow i {
+        transform: translate(0, 0);
+    }
+
+    .jesaArrow i:nth-child(1) {
+        margin: 0 0 0 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        margin-left: 15px;
+        font-size: 40px;
+        border-radius: 15px;
+        padding: 3px 5px 3px 3px;
+    }
+
+    .jesaArrow i:nth-child(2) {
+        margin: 0 0 0 0;
+        left: auto;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        margin-right: 15px;
+        font-size: 40px;
+        border-radius: 15px;
+        padding: 3px 3px 3px 5px;
+    }
+}
+/********************menu 끝 ********************/
+/********************notice 시작 ********************/
+.notice{
+    padding: 100px 0;
+    /* background: #f7f7f7; */
+    background: url(/img/notice_bg.png);
+} 
+.notice .container{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.notice .container .newLeft {
+    width: 30%;
+}
+
+.notice .container .newRight {
+    width: 70%;
+    vertical-align: middle;
+}
+
+.notice .container .newLeft h3 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.notice .container .newLeft p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.notice .container .newRight .inner{
+    display: table;
+    table-layout: fixed;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.notice .container .newRight .inner:hover {
+    background: #fff;
+}
+
+.notice .container .newRight .inner:first-child{
+    border-top: 1px solid #ccc;
+}
+.notice .container .newRight .inner div{
+    display: table-cell;
+}
+.notice .container .newRight .inner a {
+    display: table-cell;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+.newRight .inner .date{
+    width: 100px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 1.1
+}
+
+.newRight .inner .date h4 {
+    font-size: 30px;
+    color: #151515;
+    font-weight: 500
+}
+
+.newRight .inner .date p {
+    font-size: 18px;
+    color: #666;
+}
+
+.newRight .inner .info {
+    width: 80%;
+    padding: 0 20px;
+    vertical-align: bottom;
+}
+
+.newRight .inner .info h4 {
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.newRight .inner .info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.newRight .inner .icon {
+    width: 9%;
+    text-align: center;
+    vertical-align: middle;
+}
+.newRight .inner .xi-plus {
+    font-size: 26px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .notice .container {
+        flex-direction: column;
+    }
+    .notice .container .newLeft{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .notice .container .newLeft h3{
+        font-size: 35px;
+    }
+    .notice .container .newLeft h3,
+    .notice .container .newLeft p{
+        text-align: center;
+    }
+    .notice .container .newRight {
+        width: 100%;
+    }
+    .newRight .inner .date {
+    width: 10%;
+    }
+
+    .newRight .inner .date h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .newRight .inner .date p {
+        font-size: 13px;
+        color: #666;
+    }
+
+    .newRight .inner .info {
+        width: 50%;
+    }
+
+    .newRight .inner .info h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .newRight .inner .info p {
+        font-size: 13px;
+        color: #666;
+    }
+
+    .newRight .inner .icon i {
+        font-size: 16px;
+    }
+}
+
+
+
+/********************notice 끝 ********************/
+/********************store 시작 ********************/
+
+.store{
+    padding: 100px 0 100px 0;
+    display: flex;
+    text-align: center;
+}
+
+.store>div{
+    padding: 50px 0;
+    color: #fff;
+}
+.sLeft{
+    flex: 50%;
+    background: url(../img/findstore_bg.png) no-repeat center center / cover;
+    border-right: 1px solid #f3f3f3;
+}
+.sLeft strong,
+.sRight strong {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif KR', serif;
+}
+.sLeft p,
+.sRight p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-family: 'Noto Serif KR', serif;
+}
+.sLeft a,
+.sRight a {
+    padding: 4px 15px 6px 15px;
+    font-size: 16px;
+    font-weight: 300;
+    border-top:1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-family: 'Noto Sans KR';
+}
+.sLeft a:hover,
+.sRight a:hover {
+    background: #85B746;
+}
+.sRight {
+    flex: 50%;
+    background: url(../img/shakehand_bg.png) no-repeat center center / cover;
+}
+@media(max-width:768px) {
+    .store{
+        padding: 0 0 50px 0;
+        flex-direction: column;
+    }
+    .sLeft{
+    border-bottom: 1px solid #f3f3f3;
+}
+}
+
+
+/********************store 끝 ********************/
+/********************footer 시작 ********************/
+.footer{
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+}
+
+.footer .container{
+    padding: 20px;
+    text-align: center;
+}
+.footer .container .logo{
+    margin-bottom: 20px;
+}
+
+.footer .container .fInfo{
+    margin-bottom: 20px;
+
+}
+.footer .container .fInfo span{
+    display: inline-block;
+}
+
+.footer .container .fInfo .top{
+    margin-bottom: 8px;
+}
+
+.footer .container .fsns ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer .container .fsns li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer .container .fsns li a{
+    display: inline-block;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.copy{
+    padding: 13px 0;
+    background:#85B746;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/********************footer 끝 ********************/

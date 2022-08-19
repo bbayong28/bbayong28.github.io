@@ -1,0 +1,71 @@
+.Gnb {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.Gnb li {
+    width: 50px;
+}
+
+.Gnb li a {
+    position: relative;
+    display: block;
+    font-size: 0;
+    height: 15px;
+}
+
+
+.Gnb li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: 1px;
+    background: #333;
+    transition: 0.5s;
+}
+
+.Gnb li.on a::after {
+    width: 100%;
+}
+
+.this_page {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.section .txt {
+    text-align: center;
+    font-size: 100px;
+    transform: scale(1);
+    opacity: 0;
+}
+
+.section.on .txt {
+    text-align: center;
+    font-size: 100px;
+    transform: scale(2);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.page03 {
+    background: url(./assets/images/lesedilarona01.jpg) no-repeat fixed center center/cover;
+}
+
+.page04 {
+    filter: grayscale(1);
+    background: url(./assets/images/lesedilarona01.jpg) no-repeat fixed center center/cover;
+}
+
+.Footer {
+    background: #333;
+    padding: 100px 0;
+}
