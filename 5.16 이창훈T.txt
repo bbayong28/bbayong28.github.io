@@ -1721,6 +1721,113 @@ margin 보단 padding 이 좋다
 위녿우 설정 -> 제어판->모양및새인설정->접근성센터->디스플레이가 없는 컴퓨터사용
 ->시간제한 및 깜빡이는 시각 신호조정 필요없는 애니메이션 모두 끄기 체크해제!!!!!
 
+-------------------------------------------------------------------------
+08/19
+영어페이지하지말기
+section class로쓰지말기 헷갈릴 수도 있음
+이미지 가져올때 글자박힌거 가져오지말기
+li a 가운데 라인있어야한다
+손 오버플로우 히든
+
+aos때문에 스크롤 오버플로우히든으로 짜르기
+footer위에 간격
+store에 사이에 흰줄말고 ddd같은걸로
+svg 마스크 효과 그림은 그대로 있고마스크 스케일만 변경해서
+
+section에 내용없는 section은 padding 100빼기
+모비일도트 넘 작으면 안댐
+
+-------------------------------------------------------------------------
+08/22
+
+메인페이지 슬라이드 택
+toggleClass 한 페이지 마늗렁 볼꺼다
+그다음목표는 쇼핑몰을 만들꺼다
+컴포넌트 -> 라우터 -> 스테이트 -> 리눅스, 코레이? ->next.js
+
+
+
+mkdir react_basic00  폴드만들기
+cd react_basic00 
+
+npx create-react-app .
+index.js 안건드리는게 룰 라우터나 리눅스할때만 건들임
+javascript export import - https://ko.javascript.info/import-export
+
+변화를 감지하면 그부분을 다시그린다  = 함수를 다시 실행한다.
+변화를 감지하지않는 수정을 하려면 불편하게도 state함수를 써야함.
+-------------------------------------------------------------------------
+08/23
+
+jsx안에서 자바스크립트를 쳐줄려면 중괄호를 치고 씀
+ {props?.list} ?란  prop 가 있는지보고 있으면 list
+함수를 전달하고 싶을땐?
+
+transition block아니면 안먹음
+높이가 없으면 트랜지션 안됨 
+
+scss
+styled - component
+css module
+
+-------------------------------------------------------------------------
+08/24
+event target current는 별로 안씀 
+event target value /
+
+tab은 어ㄸ허게 붙ㅌ일건가 같ㅇㄴ걸 생각하면서 듣기
+
+DATA 네이버 회원데이터
+fetch / axios
+
+-------------------------------------------------------------------------
+08/25
+소플의 리액트
+리액트 쉬운데 법칙이 많다 바ㅇ법이많다
+
+슬라이드 탭 투탑 - 이번주
+담주부터 리애그로 만들라고 강요
+
+gh-page
+netlify
+dothome -- (php,mysql)  -- database;
+gnuboard.
+firebase
+
+https://www.npmjs.com/package/react-slick
+npm install react-slick --save
+npm install slick-carousel
+
+import Slider from 'react-slick';
+const settings = {}
+<Slider>
+  <figure>01</figure>
+  <figure>02</figure>
+  <figure>03</figure>
+</Slider>
+
+
+(e) => {
+return e
+}
+
+e => e
+
+https://react-slick.neostack.com/docs/example/fade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

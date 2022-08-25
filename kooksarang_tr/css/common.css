@@ -852,7 +852,7 @@ body{
 .sLeft{
     flex: 50%;
     background: url(../img/findstore_bg.png) no-repeat center center / cover;
-    border-right: 1px solid #f3f3f3;
+    border-right: 1px solid #888;
 }
 .sLeft strong,
 .sRight strong {
@@ -893,7 +893,7 @@ body{
     }
     .sLeft{
         border-right: none;
-        border-bottom: 1px solid #f3f3f3;
+        border-bottom: 1px solid #888;
     }
 }
 
