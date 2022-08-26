@@ -1,0 +1,1104 @@
+.container{    
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.rainbow{
+    position: fixed;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(96.04deg, #00AFFF 5.23%, #39D360 29.54%, #FDD724 50.89%, #FF5656 72.83%, #8F3AEC 94.18%, #1D74F3 119.09%);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+    z-index: 10;
+}
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom:1px solid #d7d7d7 ;
+    z-index: 25;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+
+}
+
+.header .gnb ul{
+    display: flex;
+    gap: 60px;
+}
+
+.header .gnb>ul>li>a{
+    padding: 0 8px;
+    font-size: 19px;    
+    font-weight: 500;
+}
+.header .gnb>ul>li{
+    position: relative;
+}
+
+nav>ul>li::after {
+    content: "";
+    position: absolute;
+    bottom:30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #8266eb;
+    transition: 0.5s;
+}
+
+nav>ul>li:hover::after {
+    width: 100%;
+}
+
+.header .gnb .smenu {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    display: none;
+    background: #fff;
+    line-height: 45px;
+    width: 150px;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999;
+    box-shadow: 1px 1px 3px #333;
+    transition: 1s;
+}
+
+.header .gnb>ul>li>ul>li>a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header .gnb>ul>li:hover .smenu {
+    display: block;
+    transition: 1s;
+}
+
+.header .icon i{
+    font-size: 25px;
+    vertical-align: -7px;
+}
+
+.header .icon i:nth-child(1){
+    margin-right: 15px;
+}
+.m__open {
+    display: none;
+}
+
+
+
+
+@media(max-width:768px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom:1px solid #d7d7d7 ;
+        z-index: 25;
+    }
+
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        line-height: 100px;
+
+    }
+
+    .gnb a { 
+        display: block; 
+    } 
+    .gnb { 
+        position: fixed; 
+        top: 0; 
+        left: -100%; 
+        width: calc(100% - 90px); 
+        height: 100vh; 
+        background: #fff; 
+        border-top: none; 
+        border-bottom: none; border-right: 1px solid #ddd; line-height: 50px; 
+        padding: 100px 15px 0 15px; transition: 0.5s; 
+        z-index: 999; 
+    } 
+
+    .gnb.on { 
+        left: 0; 
+    } 
+
+    .header .gnb ul{
+        display: flex; 
+        flex-direction: column; 
+        width: auto; 
+        margin: 0 auto; 
+        text-align: left; 
+    }
+
+    /* .header .gnb>ul>li>a{
+        padding: 0 8px;
+        font-size: 19px;    
+        font-weight: 500;
+    } */
+    .header .gnb>ul>li{
+        position: relative;
+        flex: 1; 
+        border-left: none; 
+        border-bottom: 1px solid #ddd; 
+    }
+    .header .gnb>ul>li:last-child{
+        border-right: none; 
+    }
+
+    nav>ul::after {
+        display: none; 
+        content: ""; 
+        position: absolute; 
+        top: 51px; 
+        left: 0; 
+        width: 100%; 
+        height: 0; 
+        background: #fff; transition: 0.5s; 
+        z-index: 998; 
+    } *
+
+    nav>ul:hover::after {
+        height: 250px;
+    }
+
+    .gnb .smenu {
+        display: none; 
+        position: static; 
+        top: 50px; left: 0; 
+        width: -100%; 
+        height: auto; 
+        overflow: hidden; 
+        background: #f1f1f1; 
+        transition: none; z-index: 999; 
+    }
+    .gnb>ul:hover .smenu { 
+        height: auto; 
+    } 
+
+
+    .header .icon i{
+        font-size: 25px;
+        vertical-align: -7px;
+    }
+
+    .header .icon i:nth-child(1){
+        margin-right: 15px;
+    }
+
+    nav>ul>li::after {
+        display: none;
+    }
+        
+
+    .m__open {
+        position: fixed;
+        inset: 30px 15px auto auto;
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: #8266eb;
+        border-radius: 3px;
+        z-index: 1001;
+    }
+
+    .m__open span {
+        position: absolute;
+        inset: 0 0 0 0;
+        height: 3px;
+        border-radius: 3px;
+        background: #fff;
+        transition: 0.5s;
+    }
+
+    .m__open span:nth-child(1) {
+        inset: 8px 5px 0 5px;
+    }
+
+    .m__open span:nth-child(2) {
+        inset: 17px 5px 0 5px;
+    }
+
+    .m__open span:nth-child(3) {
+        inset: 17px 5px 0 5px;
+    }
+
+    .m__open span:nth-child(4) {
+        inset: 27px 5px 0 5px;
+    }
+
+    .m__open.on span:nth-child(1) {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    .m__open.on span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .m__open.on span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .m__open.on span:nth-child(4) {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
+
+/* ---------------------------------mainVisual시작--------------------------------- */
+.mainVisual{
+    position: relative;
+    padding: 150px 0 0 0;
+}
+.mainVisual .swiper-wrapper div{
+    border-radius: 180px;
+    overflow: hidden;
+}
+
+
+.mainVisual .swiper-wrapper .swiper-slide {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.mainVisual .swiper-wrapper div .box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.3; 을하면 글씨까지 먹음 그래서 background rgba로 배경만 투명도 줌.*/
+    transition: left 0.5s;
+}
+
+.mainVisual .swiper-wrapper div .box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.mainVisual .swiper-wrapper div:hover .box {
+    width: 100%;
+} 
+
+
+.mainVisual .swiper-wrapper div .box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+.mainVisual .swiper-horizontal>.swiper-pagination-bullets, 
+.mainVisual .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.mainVisual .swiper-pagination-custom, 
+.swiper-pagination-fraction {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    width: 100%;
+} 
+.mainVisual .swiper-pagination-bullet { 
+    width: 15px; 
+    height: 15px; 
+    background: #c4c4c4;
+    /* background: rgba(0, 0, 0, 0.2); */ 
+    opacity: 1; 
+}
+.mainVisual .swiper-pagination-bullet-active { 
+    width: 40px; 
+    transition: width .5s; 
+    border-radius: 10px; 
+    background: #6136fd; 
+    border: 1px solid transparent; 
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .mainVisual{
+        position: relative;
+        padding: 150px 0 0 0;
+        text-align: center;
+        word-break: keep-all;
+    }
+    .mainVisual .swiper-wrapper div{
+        border-radius: 180px;
+        overflow: hidden;
+    }
+
+
+    .mainVisual .swiper-wrapper .swiper-slide {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    /* .mainVisual .swiper-wrapper div .box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.5s;
+    } */
+
+    .mainVisual .swiper-wrapper div .box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+
+
+    .mainVisual .swiper-wrapper div .box p{
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+
+
+    .mainVisual .swiper-horizontal>.swiper-pagination-bullets, 
+    .mainVisual .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .mainVisual .swiper-pagination-custom, 
+    .swiper-pagination-fraction {
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        width: 100%;
+    } 
+    .mainVisual .swiper-pagination-bullet { 
+        width: 13px; 
+        height: 13px; 
+        background: #c4c4c4;
+        /* background: rgba(0, 0, 0, 0.2); */ 
+        opacity: 1; 
+    }
+    .mainVisual .swiper-pagination-bullet-active { 
+        width: 30px; 
+        transition: width .5s; 
+        border-radius: 10px; 
+        background: #6136fd; 
+        border: 1px solid transparent; 
+    }
+}
+/* ---------------------------------mainVisual 끝--------------------------------- */
+/* ---------------------------------product시작--------------------------------- */
+.product{
+    padding: 200px 0 100px 0;
+}
+
+.product h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product .inner p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.product .inner{
+    margin-bottom: 30px;
+}
+
+.product a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 30px;
+    background: #8266eb;
+    border: 1px solid #8266eb;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.product .top{
+    margin-bottom: 20px;
+}
+
+.product .first,
+.product .second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .first{
+    margin-bottom: 50px;
+}
+.product .second{
+    margin-bottom: 100px;
+}
+
+
+.product .first .left,
+.product .second .right{
+    width: 60%;
+}
+.product .first .left{
+    text-align: left;
+}
+.product .second .left{
+    transform: scaleX(-1)
+}
+.product .second .right {
+    text-align: right;
+}
+.product .first .left h3,
+.product .second .right h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product .first .left p,
+.product .second .right p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.product .third{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+}
+.product .third .left img,
+.product .third .right img{
+    margin-bottom: 30px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px #787878;
+}
+.product .third .left h3,
+.product .third .right h3{
+    display: inline-block;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.product .third .left p,
+.product .third .right p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .product{
+    padding: 100px 0 50px 0;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.product h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.product .inner p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.product .inner{
+    margin-bottom: 15px;
+}
+
+.product a{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 25px;
+    background: #8266eb;
+    border: 1px solid #8266eb;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.product .top{
+    margin-bottom: 50px;
+}
+
+.product .first,
+.product .second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .first{
+    margin-bottom: 30px;
+}
+.product .second{
+    margin-bottom: 50px;
+}
+
+
+.product .first .left,
+.product .second .right{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+} 
+.product .first .right{
+    margin-bottom: 30px;
+}
+
+.product .second .left{
+    margin-bottom: 20px;
+}
+
+.product .first .left{
+    order: 2;
+}
+.product .first .right{
+    order: 1;
+}
+
+.product .first .left h3,
+.product .second .right h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.product .first .left p,
+.product .second .right p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+.product .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+}
+.product .third .left img,
+.product .third .right img{
+    margin-bottom: 30px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px #787878;
+}
+.product .third .left h3,
+.product .third .right h3{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.product .third .left p,
+.product .third .right p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+}
+
+
+/* ---------------------------------product 끝--------------------------------- */
+/* ---------------------------------mirroring시작-------------------------------- */
+.mirroring{
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(#8366e9 80%, #ffffff 50%);
+    /* background: linear-gradient(to right,#5C2A96 80%, #7748AC 80%, #986BCC 80%, #6F41A4 80%, #582D8B 80%); */
+    color:#f2f2f2;
+}
+
+.mirroring .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mirroring .left{
+    flex: 1.5;
+    position: relative;
+    top: -32px;
+}
+.mirroring .right{
+    flex: 1;
+    position: relative;
+    top: 40px;
+}
+
+.mirroring h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mirroring p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.mirroring .inner{
+    margin-bottom: 30px;
+}
+
+.mirroring a {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 13px 30px;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+}
+
+.mirroring a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #f2f2f2;
+}
+
+/* .mirroring .right img{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    border-radius: 20px;
+} */
+
+@media (max-width : 768px){
+    .mirroring{
+    text-align: center;
+    word-break: keep-All;
+    padding: 50px 0;
+    position: relative;
+    background: linear-gradient(#8366e9 80%, #ffffff 50%);
+    /* background: linear-gradient(to right,#5C2A96 80%, #7748AC 80%, #986BCC 80%, #6F41A4 80%, #582D8B 80%); */
+    color:#f2f2f2;
+    }
+
+.mirroring .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mirroring .left{
+    flex: 1.5;
+    position: relative;
+    top: 0px;
+}
+.mirroring .right{
+    flex: 1;
+    position: relative;
+    top: 40px;
+}
+
+.mirroring h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.mirroring p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+
+.mirroring .inner{
+    margin-bottom: 20px;
+}
+
+.mirroring a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+}
+
+.mirroring a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #f2f2f2;
+}
+}
+
+/* ---------------------------------mirroring 끝--------------------------------- */
+/* ---------------------------------otherProduct시작--------------------------------- */
+
+.otherProduct{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.otherProduct>h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.otherProduct .inner{
+    margin-bottom: 50px;
+}
+
+.otherProduct .inner p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.other-slide img{
+    margin-bottom: 18px;
+}
+
+.other-slide p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.other-slide strong{
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+@media (max-width : 768px){
+    .otherProduct{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .otherProduct>h2 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .otherProduct .inner{
+        margin-bottom: 50px;
+    }
+
+    .otherProduct .inner p {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 8px;
+    }
+    .other-slide img{
+        margin-bottom: 10px;
+    }
+
+    .other-slide p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .other-slide strong{
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+    }  
+}
+/* ---------------------------------otherProduct 끝--------------------------------- */
+/* ---------------------------------game시작--------------------------------- */
+
+.game{
+    padding: 100px 0;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.game h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.game .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.game .container div{
+    flex:33.3333%;
+    margin-bottom: 30px;
+}
+.game strong{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.game em{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+.game .container div{
+    position: relative;
+    overflow: hidden;
+}
+
+.game .container div .out{
+    border-radius: 30px;
+}
+
+.game .container div a .box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 78.4%;
+    background: rgb(129, 65, 248);
+    border-radius: 0 30px 30px 0 ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.3; 을하면 글씨까지 먹음 그래서 background rgba로 배경만 투명도 줌.*/
+    transition: right 0.5s;
+}
+
+.game .container div:hover .box {
+    width: 25%;
+}
+.game .container div .box i{
+    font-size: 30px;
+}
+.game .container div img {
+    transition: transform 0.5s;
+}
+
+.game .container div:hover img {
+    transform: translateX(-50px);
+}
+
+@media (max-width:768px){
+    
+    .game{
+        padding: 50px 0;
+        word-break: keep-all;
+        text-align: center;
+        background: #f1f1f1;
+    }
+
+    .game h2{ 
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .game .container{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .game .container div{
+        flex:45%;
+        margin-bottom: 10px;
+    }
+    .game strong{
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .game em{
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .game .container div{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .game .container div .out{
+        border-radius: 30px;
+    }
+
+    .game .container div:hover img {
+    transform: translateX(-0);
+}
+    .game .container div a .box {
+        display: none;
+    }
+}
+/* ---------------------------------game 끝--------------------------------- */
+/* ---------------------------------footer시작--------------------------------- */
+.footer{
+    padding: 30px 0 0 0;
+}
+
+.footer .container{
+    display: flex;
+    padding: 0 0 20px 0;
+}
+
+.footer .container .left{
+    flex: 1;
+}
+.footer .container .right{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex: 2;
+}
+
+.footer .container .right dt{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.footer .container .right dd {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(117, 117, 117);
+}
+.bold{
+    margin-top: 40px;
+}
+
+.copy{
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
+@media (max-width:768px){
+    .footer{
+    padding: 30px 15px 0 15px;
+    }
+
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 0 10px 0;
+    }
+
+    .footer .container .left{
+        flex: 1;
+    }
+    .footer .container .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .footer .container .right dt{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 18px;
+        color: #333;
+    }
+
+    .footer .container .right dd {
+        display: none;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        color: rgb(117, 117, 117);
+    }
+    .bold{
+        margin-top: 0;
+    }
+
+    .copy{
+        text-align: center;
+        padding: 8px;
+        font-size: 10px;
+        color: #777;
+        border-top: 1px solid #ddd;
+    }
+
+}
+
+
+
+/* ---------------------------------footer 끝--------------------------------- */
