@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tab 02</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/slick.css">
     <style>
@@ -25,6 +25,8 @@
         .tab_menu>li {
             flex: 1;
         }
+
+
 
         .tab_menu>li>a {
             display: block;
@@ -78,10 +80,9 @@
                     <a href="">menu03</a>
                 </li>
             </ul>
-
             <ul class="tab_content">
                 <li class="on">
-                    <div class="product_slider">
+                    <div class="product_sider">
                         <figure>
                             <img src="../img/lesedilarona01.jpg" alt="">
                         </figure>
@@ -102,8 +103,8 @@
                         </figure>
                     </div>
                 </li>
-                <li class="on">
-                    <div class="product_slider">
+                <li>
+                    <div class="product_sider">
                         <figure>
                             <img src="../img/lesedilarona01.jpg" alt="">
                         </figure>
@@ -124,8 +125,8 @@
                         </figure>
                     </div>
                 </li>
-                <li class="on">
-                    <div class="product_slider">
+                <li>
+                    <div class="product_sider">
                         <figure>
                             <img src="../img/lesedilarona01.jpg" alt="">
                         </figure>
@@ -146,15 +147,11 @@
                         </figure>
                     </div>
                 </li>
+
             </ul>
         </div>
-
     </section>
     <section class="bbong"></section>
-
-
-
-
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
@@ -162,36 +159,18 @@
         $(function () {
             $('.tab_menu>li>a').on('click', function (e) {
                 e.preventDefault();
-                //console.log($(this).parent().index())
+                //console.log($(this).parent().index());
                 var idx = $(this).parent().index();
-                //this == e.currnetTarget
-                //this(x) --> this e.Target
                 $('.tab_content>li').removeClass('on');
                 $('.tab_content>li').eq(idx).addClass('on');
-                //$('.tab_content>li').eq($(this).parent().index();
                 $('.tab_menu>li').removeClass('on');
                 $(this).parent().addClass('on');
-                //$('.product_slider').slick('setPosition');
+            });
 
-            })
-
-            $('.product_slider').slick({
+            $('.product_sider').slick({
                 slidesToShow: 5,
             })
-
         })
-
-
-        //$(function () {
-        //    var ttd = (e) => {
-        //        e.preventDefault();
-        //        //console.log($(this).parent().index())
-        //        var idx = $(this).parent().index();
-        //        $('.tab_content>li').removeClass('on');
-        //        $('.tab_content>li').eq(idx).addClass('on');
-        //    }
-        //    $('tab_menu>li>a').on('click', ttd)
-        //})
     </script>
 </body>
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tab 01</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <style>
         .tab {
@@ -24,6 +24,8 @@
         .tab_menu>li {
             flex: 1;
         }
+
+
 
         .tab_menu>li>a {
             display: block;
@@ -66,62 +68,37 @@
                     <a href="">menu03</a>
                 </li>
             </ul>
-
             <ul class="tab_content">
-                <li class="on">01. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum excepturi optio
-                    unde
-                    eveniet
-                    tempore
-                    possimus facilis quia.</li>
-                <li>02. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum excepturi optio unde
-                    eveniet
-                    tempore
-                    possimus
-                    facilis quia.</li>
-                <li>03. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum earum excepturi optio unde
-                    eveniet
-                    tempore
-                    possimus
-                    facilis quia.</li>
+                <li class="on">01 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae architecto magni
+                    asperiores
+                    consequatur
+                    vitae
+                    sit earum nihil laudantium.</li>
+                <li>02 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae architecto magni asperiores
+                    consequatur
+                    vitae
+                    sit earum nihil laudantium.</li>
+                <li>03 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae architecto magni asperiores
+                    consequatur
+                    vitae
+                    sit earum nihil laudantium.</li>
             </ul>
         </div>
-
     </section>
-
-
-
-
 
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script>
         $(function () {
             $('.tab_menu>li>a').on('click', function (e) {
                 e.preventDefault();
-                //console.log($(this).parent().index())
+                //console.log($(this).parent().index());
                 var idx = $(this).parent().index();
-                //this == e.currnetTarget
-                //this(x) --> this e.Target
                 $('.tab_content>li').removeClass('on');
                 $('.tab_content>li').eq(idx).addClass('on');
-                //$('.tab_content>li').eq($(this).parent().index())
-                $(this).parent().removeClass('on')
-                $(this).parent().addClass('on')
-
+                $('.tab_menu>li').removeClass('on');
+                $(this).parent().addClass('on');
             })
-
         })
-
-
-         //$(function () {
-        //    var ttd = (e) => {
-        //        e.preventDefault();
-        //        //console.log($(this).parent().index())
-        //        var idx = $(this).parent().index();
-        //        $('.tab_content>li').removeClass('on');
-        //        $('.tab_content>li').eq(idx).addClass('on');
-        //    }
-        //    $('tab_menu>li>a').on('click', ttd)
-        //})
     </script>
 </body>
 

@@ -88,6 +88,8 @@ body{
     gap: 40px;
     font-size: 18px;
 }
+
+
 .mainVisual{
     background: url(./assets/images/main.png) no-repeat fixed center center / cover;
     text-align: center;
