@@ -20,7 +20,7 @@ section : 큰박스라 생각하기
 
 display : block, none, inline, flex
 display - 현상 position - 어디에
-경로  ./ 나의 형제 레벨  ../ 나의 부모 레벨
+경로 ->  ./ : 나의 형제 레벨  ../ : 나의 부모 레벨
 
 주석 단축키 
 ctrl + /
@@ -1294,7 +1294,7 @@ autoplay 있으면 화살표 빼고 없으면 화살표넣기
 7/18
 폰트자유롭게
 메인뺴고 섹션3개
-주제 자유록베
+주제 자유롭게
 하럭없으면 주제 - 가족(웨딩 장례식 애견,,)
 
 https://samuelsmalls.co.kr/product/list.html?cate_no=116
@@ -1831,17 +1831,78 @@ https:// 에 's'붙었는지 꼭 확인 - 깃허브에서 안뱉어줌
 목요일 6-9시 5명 노트북 연결가능? 가격?
 공간   051-809-0900
 이룸  0507-1435-5591
+-------------------------------------------------------------------------
+09/01
+
+위에쓰는게 좋고 body안의 밑
+body밖에 밑에 쓰면 웹표준에 어긋남 양놈들은 쓰기도함
+
+js방식 -> window.addEventListener('DOMContentLoaded', () => {});
+jquery방식 -> $(function () { });
+
+e.target.value
+
+clasddList.add = addClass
+clasddList.add = removeClass
+clasddList.toggle = toggleClass
+clasddList.contain = 
+
+-------------------------------------------------------------------------
+09/05
+
+display: none/block trasition안먹음
+
+opacity공간을 차지하고 보이진 않은 이벤트는 살아잇음
+제이쿼리 cookie
+자바스크립트 xcookie
+
+-------------------------------------------------------------------------
+09/07
+깃허브에 레파지토리 만들고 d 드라이브 all 폴더에 test 폴더 만들고 
+echo "# test_react" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/bbayong28/test_react.git
+git push -u origin main
+이거 터미널에 쳐서 연결시켜주기
+README 수정해서 
+git add .
+git commit -m 20220907
+git push
+해서 올라가는지 확인하기
+올라가면 
+npx create-react-app .쳐주기 (부모폴더이름이 이상하면 거부할 수 있음)
 
 
+.gitignore 파일에 /coverage등등 깃에 올리지 않는것들 /슬러쉬+이름
+package-lock
+package.json 중요
+
+node_modules이 안올라가서
+집에서 하면 다운받으면 안됨 npm install치면됨 
+집에서 git pull해서 작업하고 git push 하고
+다시 학원와서 ㅎgit pull 하고 git push하
 
 
+빌드했을 때 public에있는거 다올림
 
+img경로잡기 쪼금 어려움
 
+github pages 배포하는 쉬운법 사이트 보고 배포하기
+https://intrepidgeeks.com/tutorial/everything-deployed-by-gh-pages
 
+터미널에 npm install gh-pages --save-dev쳐서 깔기 (npm i gh-pages쳐도됨)
+package.json에 "private": true,밑에    homepage": "https://bbayong28.github.io/test_react/넣어주고
+package.json에"scripts"에       "predeploy": "npm run build", "deploy": "gh-pages -d build"요곳도 넣어주기
+npm run deploy치면 배포돼서 https://bbayong28.github.io/test_react주소에 react문양 뜸.
 
+깃에 푸쉬안해도 빌드안해도 deploy하면 올라감
+-------------------------------------------------------------------------
+09/14
+styled-component
 
-
-
-
-
+|n 자바스크립트 문자열 변환찾아보기
+white-space는 한줄처리 할때 말고는 거의 안슴
 
