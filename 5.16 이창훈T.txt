@@ -1895,14 +1895,51 @@ https://intrepidgeeks.com/tutorial/everything-deployed-by-gh-pages
 
 터미널에 npm install gh-pages --save-dev쳐서 깔기 (npm i gh-pages쳐도됨)
 package.json에 "private": true,밑에    homepage": "https://bbayong28.github.io/test_react/넣어주고
-package.json에"scripts"에       "predeploy": "npm run build", "deploy": "gh-pages -d build"요곳도 넣어주기
-npm run deploy치면 배포돼서 https://bbayong28.github.io/test_react주소에 react문양 뜸.
+package.json에"scripts"에  "predeploy": "npm run build",   "deploy": "gh-pages -d build"  요곳도 넣어주기
+npm run deploy 치면 배포돼서 https://bbayong28.github.io/test_react주소에 react문양 뜸.
 
+(자동으로 되지만 안될 수도 있음 - 레파지토리 페이지가서 branch 를 gh-pages 로 변경해주기)
 깃에 푸쉬안해도 빌드안해도 deploy하면 올라감
+
+
+https://github.com/bbayong28/hospital_tr.git 이지만
+https://github.com/bbayong28/hospital_tr/ 으로 침
+-------------------------------------------------------------------------
+09/08
+https://www.npmjs.com/package/react-slick주소가서
+
+npm install react-slick --save
+npm install slick-carousel
+터미널에 넣어줌
+
+슬라이드 넣을 컴포넌트 위에 
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+적어줌
+
 -------------------------------------------------------------------------
 09/14
 styled-component
 
 |n 자바스크립트 문자열 변환찾아보기
 white-space는 한줄처리 할때 말고는 거의 안슴
+
+-------------------------------------------------------------------------
+09/15
+유튜브 
+npm install react-youtube
+
+import YouTube from 'react-youtube';해주기
+
+jsx에 label 을 써서 for을 너헝줘야할때 for 을 넣으면 에러남(JSX는 javaScrit이므로 for은 반복의 의미)
+다라서 for을 htmlFor으로 써줘야함
+
+-------------------------------------------------------------------------
+09/16
+
+ES7+ React/Redux/React-Native snippets 이 확장파일 깔고 자기가 만든 컴포넌트에 rafce 쳐주면 자동으로 만들어줌!!!!!!
+
+112px 로 png 파비콘 만들기
+
+
 
