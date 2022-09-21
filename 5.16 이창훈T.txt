@@ -1892,6 +1892,7 @@ img경로잡기 쪼금 어려움
 
 github pages 배포하는 쉬운법 사이트 보고 배포하기
 https://intrepidgeeks.com/tutorial/everything-deployed-by-gh-pages
+https://codingapple.com/unit/react-build-deploy-github-pages/
 
 터미널에 npm install gh-pages --save-dev쳐서 깔기 (npm i gh-pages쳐도됨)
 package.json에 "private": true,밑에    homepage": "https://bbayong28.github.io/test_react/넣어주고
@@ -1940,6 +1941,154 @@ jsx에 label 을 써서 for을 너헝줘야할때 for 을 넣으면 에러남(JS
 ES7+ React/Redux/React-Native snippets 이 확장파일 깔고 자기가 만든 컴포넌트에 rafce 쳐주면 자동으로 만들어줌!!!!!!
 
 112px 로 png 파비콘 만들기
+
+-------------------------------------------------------------------------
+9/19
+
+예제 어려운걸 선택한거같다 이번주는 쉬운예제로 할꺼다
+여태 메인만 했다 서브해서 어떻게 돌아가는지 모르니까
+SPA 만들라니까 페이지 여러개 있는 상황을 이해못하는 사람이 있더라
+php  
+
+html>a 페이지 연결
+
+SPA 만들거고 
+todo 앱 만들기 - 쉽긴쉬운데 우스운건 아니다 
+개념을 조금쪼금씩 알아갈거다
+
+
+예제 어려운걸 선택한거같다.
+오늘 현대엘베 마무리하고 이번주는 쉬운예제로 할꺼다.
+(쉬운예제를 php이용해서 SPA만들어서 붙이는거 이번주에 할듯!)
+
+리액트 쉽게하기위한것, 팝업 배너 슬라이드 만드는거 똑같다
+
+시간남아서 소스봤당
+배열엉뚱하게 한사람이있다
+
+
+*기본구조
+const [test, setTest= useState();
+useEffect(() => { },[])
+
+
+스프레드 비구조할당 공부 
+
+리액트에서 쓰는 style 
+scss
+
+https://styled-components.com/
+https://www.daleseo.com/react-styled-components/
+styled-component
+npm i styled-components 터미널에 깔기
+
+vscode-styled-components확장깔면 자동완성 됨
+
+<Btn className='on' onClick={() => {
+            window.scrollTo(
+                { top: 0, behavior:'smooth' }
+            )
+        }}>
+            <i className='xi-arrow-top'></i>
+        </Btn>
+시 윈도우에서 제한 안풀어주면 smooth 안먹힘
+
+
+GSAP 깔기(npm i gsap)
+깔고 import 해주기(import { gsap } from "gsap";)
+(import ScrollToPlugin from "gsap/ScrollToPlugin";)이것도 추가해주기
+gsap.registerPlugin(ScrollToPlugin);요곳도 해줘야함
+
+
+scss
+module.css
+styled-component
+
+spa
+
+props...
+todo
+
+redux recoil
+
+게시판달려있는 홈페이지
+///10초가지 끝내버림.
+
+-------------------------------------------------------------------------
+9/20
+포폴ㄹ다섯개
+그중 하나 반응형 필수
+
+https://hururuek-chapchap.tistory.com/212
+라우터설치(npm install react-router-dom@6) 
+-> index.js(도입부)에 라우터 사용하겠다고 알리기(import {BrowserRouter as Router} from 'react-router-dom')
+-> 링크 설정해주기(import { Routes, Route} from 'react-router-dom') Routes는 URL 주소의 바구니이고 Route는 URL 입니다.  
+
+하나의 URL - 하나의 URL를 사용할 때는 <Route />에 path를 적어주고 element에 Component를 넣어주면 됩니다.
+중첩 URL - 중첩 URL은 Path 밑에 또다른 Path를 주는 겁니다. 예를들어 name/chapchap 이런씩으로 말이죠
+아래 처럼 하나의 URL 처럼 원하는 URL을 적어주고 하위 링크를 두는 겁니다.
+<Route path="/about/intro" element={<Content/>}/>
+
+다른 하나는 Route 밑에 다시 Route를 만들어 주는 방법입니다.
+<Route path='profile/*' element={<Home name={"Profile"}/>}>
+                <Route path='special' element={<Content />} />
+</Route>
+위의 차이는 컴포넌트를 어떤식으로 사용하냐에 따라 달라 질 것 같습니다.
+
+
+
+
+ 방법은 두가지가 있습니다.
+
+리액트 프로젝트에 sass를 적용하는 방법
+https://minhanpark.github.io/today-i-learned/sass-and-css-module-in-react/
+
+
+npm i -D sass
+
+npm i gh-pages
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build" 
+"homepage": "https://bbayong28.github.io/hd_spa/"
+npm run deploy 
+
+
+리액트 스와이퍼
+https://swiperjs.com/react
+
+
+npm i swiper
+
+sass for문쓰기
+https://abcdqbbq.tistory.com/83
+
+@for $i from start to end : to 뒤에 오는 숫자 미만*/
+/*  @for $i from start through end : throw 뒤에 오는 숫자 이하*/
+
+slick은 젤 앞에 on이 안붙어서 useEffect 써야하는데 
+swiper는 on이  붙어서 안써도됨
+
+github pages에서 라우팅된 페이지에서 새로고침시 404페이지를 반환할때
+https://bum-developer.tistory.com/entry/React-gh-pages%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%9C-%ED%8E%98%EC%9D%B4%EC%A7%80%EA%B0%80-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8-%EC%8B%9C-404-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%96%A0%EC%9A%94
+https://velog.io/@heyoon/github-pages%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9A%B0%ED%8C%85%EB%90%9C-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%EC%84%9C-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8%EC%8B%9C-404%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%B0%98%ED%99%98%ED%95%A9%EB%8B%88%EB%8B%A4
+
+
+
+
+-------------------------------------------------------------------------
+9/21
+레파지토리 하나 새로 파고(clean_spa)
+npx create-react-app .
+npm i react-router-dom@6
+npm i -D sass
+npm i styled-components
+npm i swiper
+npm i gh-pages
+
+리액트는 검색엔진에 최적화가 안됨
+
+Next.js는 spa지만 seo??에서 지원해줘서 검색엔진ㅇ 나오게 해줌
+
 
 
 
