@@ -2080,7 +2080,7 @@ https://velog.io/@heyoon/github-pages%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9A%B0%ED%8C
 레파지토리 하나 새로 파고(clean_spa)
 npx create-react-app .
 npm i react-router-dom@6
-npm i -D sass
+npm i - D sass / npm i sass
 npm i styled-components
 npm i swiper
 npm i gh-pages
@@ -2088,7 +2088,41 @@ npm i gh-pages
 리액트는 검색엔진에 최적화가 안됨
 
 Next.js는 spa지만 seo??에서 지원해줘서 검색엔진ㅇ 나오게 해줌
+-------------------------------------------------------------------------
+9/22
+스프라이트기법 - 같은 사진위치만 바꿔서 다른 메뉴처럼  ? 다른부분?ㅇㅔ 넣는것
+ir 기법 : 시각장애인 분들이 들어오면 배경으로 메뉴가 짜져있으면 글자쓰고 텍스트를 없앰(보이지않게함)
+displaynone때리면 아예읽히지않음 
+ir 기법 : display:block, overflow:hedden, position:relative,width100%,height100% z-index:-1
 
+<img src={process.env.PUBLIC_URL + "/assets/images/main_s01" + con.id + ".jpg"} alt="" />
+<img src={`${process.env.PUBLIC_URL}/assets/images/main_s01${con.id}.jpg`} alt="" />
+
+
+강제호출 한번 해주고 리사이즈 하면 새로고침해도 뜸!!!!!
+그래서 강제호출한번 리사이즈함수 한번 해야함!!!!!!
+
+
+-------------------------------------------------------------------------
+9/23
+
+이미지는 특이하게 인라인 블록이되는...
+
+-------------------------------------------------------------------------
+9/26
+쇼핑몰
+
+data를 가지고 html을 만드는 것
+쇼핑몰 * 배열 -> 페이지
+ftp / http  문자열의 조합으로 가져옴 -> 갹채로 만듦 json을 사용
+props귀찮음 -> 다른데다 저장ㅈ해놓음
+데이터를 ㄱ나결하게 한군데 담아놓는거 -리덕스 리코일
+데이터 가져와 쓰는거 여태 했는데 todo앱은 데이터를 입력할 수 있음
+카테고리->어려윰,,( 가격이 높은순 가격이 낮은순 최신등록순...  )
+2주 리액트 끝내고? 접어놓고? 포폴
+데이터 가져오기 -> 가공하기 -> 내 스테이트에 담아놓고 쓰는일
+
+fetch / axios ->웹데이터를 가져오는 방법
 
 
 
