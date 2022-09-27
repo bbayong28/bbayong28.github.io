@@ -2123,6 +2123,48 @@ props귀찮음 -> 다른데다 저장ㅈ해놓음
 데이터 가져오기 -> 가공하기 -> 내 스테이트에 담아놓고 쓰는일
 
 fetch(js에서 제공하는 데이터? ajax? ) / axios(fetch 보다 더 쉽게 쓸려고 만든거 ) ->웹데이터를 가져오는 방법
+-------------------------------------------------------------------------
+9/27
+
+php ---
+
+0. 일반데이터 사용.(다지인용 데이터)
+1. react-router-dom 사용 무제한 페이지 생성
+2. 서버에서 데이터 가져오기 axios.(입력받은? 데이터)
+3. 데이터 가공해서 쓰기.
+
+---쇼핑몰처럼 꾸며보기 
+
+레파지토리 하나 새로 파고(phymongshe_tr)
+npx create-react-app .
+npm i react-router-dom@6
+npm i sass 안되면-> npm i - D sass
+npm i styled-components
+npm i react-slick / npm install slick-carousel      or      npm i swiper
+npm i axios
+npm i gh-pages
+"homepage": "https://bbayong28.github.io/phymongshe_tr/",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build" 
+npm run deploy 
+
+boot-strap
+
+state와 props의 차이 찾아보기(공부!!!!!!)
+
+
+https://desipossa.github.io/shop_cra/assets/data.json
+
+오른쪽키 막히면 ctrl+u
+
+it.idx,) 첫번째자리 나자신 두번째 순서 세번째 어레이 배열
+key에다가 idx 보다 it.id가 유니크하고 좋데 뭐가좋은진 모르겟데
+
+react-icons 사이트
+https://react-icons.github.io/react-icons/icons?name=fi
+
+
+
 
 
 
