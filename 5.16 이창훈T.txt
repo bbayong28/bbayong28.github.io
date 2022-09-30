@@ -2142,12 +2142,14 @@ npm i sass 안되면-> npm i - D sass
 npm i styled-components
 npm i react-slick / npm install slick-carousel      or      npm i swiper
 npm i axios
+npm install react-icons
 npm i gh-pages
 "homepage": "https://bbayong28.github.io/phymongshe_tr/",
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build" 
 npm run deploy 
 
+npm install react-icons
 boot-strap
 
 state와 props의 차이 찾아보기(공부!!!!!!)
@@ -2163,6 +2165,35 @@ key에다가 idx 보다 it.id가 유니크하고 좋데 뭐가좋은진 모르�
 react-icons 사이트
 https://react-icons.github.io/react-icons/icons?name=fi
 
+-------------------------------------------------------------------------
+9/28
+position 없앨때 static!!!!!!
+키값 it.id 고유한값! 아니면 idx
+-------------------------------------------------------------------------
+9/29
+닷홈계정에 영카트깔아서 해보면 어쩌곡저ㅉ꺼꼬
+
+-------------------------------------------------------------------------
+9/30
+화요일부터는 투두리스트
+
+todo..입력..데이터 
+리덕스... store
+
+<section className='sce slide_' style={{fontSizd:'60px'}}>
+네이버 api 라서 황의남자로 검색해도 비슷한 데이터 다 긁어옴
+좀 느림
+adayfrom 
+리액트마키? 뭐 하니까 슬라이드 속도조절이랑 양끝에 블러처리 할수잇음
+
+파이어베이스 - 로그인해줌 
+다크모드구현 - 
+라우터 스테이트정도해서
+로컬스트로지ㅏ면새로고침해도안날라감 원래는 서버에 저장해야하는데 닷홈같은데 어려움 그래서 브라우징에 저장하는 로컬 스크로직? 으로 한번 해보면 좋긴하것지?
+포폴다섯개이상 포폴까지 반응형
+제이쿼리로 만든 다단메뉴 들어가야함
+반응형으로 하고 
+리액트하나하지뭐 
 
 
 
