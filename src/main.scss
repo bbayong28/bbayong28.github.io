@@ -1,0 +1,157 @@
+$mainColor : #333;
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+.FP{
+    color: $mainColor;
+
+    .section{
+
+        &.active{
+            font-size: 10rem;
+            transition: 1s;
+        }
+    }
+
+    .inner{
+        height: 100vh;
+    }
+        
+    .gnb{
+        position: fixed;
+        top: 50%;
+        right: 5rem;
+        transform: translateY(-50%);
+        width: 3rem;
+        z-index: 999;
+
+        li {
+            font-size: 0;
+            position: relative;
+            height: 2rem;
+
+            a {
+                display: block;
+                height: 2rem;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;   
+                    height: 1px;                 
+                    background: $mainColor;
+                    transition: width 0.5s; 
+                }
+            }
+        }
+        li.on{
+            a {
+                &::after{
+                    width: 100%;  
+                }
+            }
+        }
+    }
+}
+
+.cover{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: $mainColor;
+    color: #fff;
+    z-index: 999;
+
+    &.on{
+        display: block;
+    }
+}
+.header{
+    position: fixed;
+    top: 20rem;
+    left: 50%;
+    z-index: 1000;
+}
+
+.cover_open{
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 1000;
+    font-size: 0;
+    width: 3rem;
+    height: 3rem;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 3px;
+        right: 3px;
+        height: 1px;
+        background: $mainColor;
+
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 3px;
+        right: 3px;
+        height: 1px;
+        background: $mainColor;
+    }
+
+    span{
+        &::before{
+            content: "";
+            position: absolute;
+            top: calc(50% - 0.5px);
+            left: 3px;
+            right: 3px;
+            height: 1px;
+            background: $mainColor;
+
+        }
+        &::after{
+            content: "";
+            position: absolute;            
+            top: calc(50% - 0.5px);
+            left: 3px;
+            right: 3px;
+            height: 1px;
+            background: $mainColor;
+        }
+    }
+}
+.cover_open.on{
+
+    &::before{
+        display: none;
+    }
+    &::after{
+        display: none;
+    }
+
+    span{
+        &::before{
+            transform: rotate(45deg);
+
+        }
+        &::after{ 
+            transform: rotate(-45deg);
+        }
+    }
+}
