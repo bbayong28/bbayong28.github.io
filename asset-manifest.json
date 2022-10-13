@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/phymongshe_tr/static/css/main.3c91345a.css",
+    "main.js": "/phymongshe_tr/static/js/main.c1d57b82.js",
+    "index.html": "/phymongshe_tr/index.html",
+    "main.3c91345a.css.map": "/phymongshe_tr/static/css/main.3c91345a.css.map",
+    "main.c1d57b82.js.map": "/phymongshe_tr/static/js/main.c1d57b82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c91345a.css",
+    "static/js/main.c1d57b82.js"
+  ]
+}
