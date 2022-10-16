@@ -1,0 +1,296 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.case {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    p {
+        white-space: pre;
+    }
+}
+
+.PF{
+    /* .num{
+        position: fixed;
+        bottom: 10rem;
+        right: 5rem;
+        z-index: 999;
+    } */
+
+    .btn{
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        z-index: 1000;
+        font-size: 0;
+        width: 3rem;
+        height: 3rem;
+        border: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            height: 2px;
+            background: #333;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            height: 2px;
+            background: #333;
+        }
+
+        &.on::before {
+            display: none;
+        }
+
+        &.on::after {
+            display: none;
+        }
+
+        span::before,
+        span::after{
+            content: "";
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 0.5rem;
+            right: 0.5rem;
+            height: 2px;
+            background: #333;
+        }
+        &.on span::before{
+            transform: rotate(45deg);
+        }
+        &.on span::after{
+            transform: rotate(-45deg);
+        }
+    }
+    .Cover{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #4C86BC;
+        color: #fff;
+        z-index: 1000;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+
+        &.on{
+            height: 100vh;
+        }
+        .inCover{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ; 
+            /* border-radius: 91% 53% 100% 36% / 100% 52% 89% 39%; */
+            max-width: 1200px;
+            margin: 0 auto;
+            background: wheat;
+            width: 600px;
+            height: 800px;
+        }
+        .menu{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #4C86BC;
+            font-size: 45px;
+            font-weight: 600;
+            li{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            li:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .gnb{
+        position: fixed;
+        bottom: 4rem;
+        right: 4rem;
+        z-index: 999;
+        ul{            
+            display: flex;
+            align-items: center;
+            
+            li~li{
+                margin-left: 2rem;
+
+            &.on a{
+                color: 333;
+                font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.section{
+    font-size: 20px;
+    /* transition: 1s 1s; */
+    /* &.active{
+        font-size: 20px;
+    } */
+}
+
+.main{
+    position: relative;
+    font-size: 5px;
+    transition: 1s 1s;
+    background: linear-gradient( to bottom, rgba(255,180,207,70.78%),rgba(247,200,255,100%),rgba(142,88,255,30%),rgba(114,128,255,50%));
+    .case{
+        flex-direction: column;
+    }
+
+    &.active{
+        font-size: 20px;
+    }
+    .circle{
+        position: absolute;
+        width: 590px;
+        height: 590px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: linear-gradient( to bottom, rgba(163,161,255,100%),rgba(201,235,255,80%));
+        border-radius: 50%;
+    }
+    h2{
+        z-index: 999;
+        color: #fff;
+        font-size: 120px;
+        text-align: center;
+        line-height: 140px;
+        font-family: 'Noto Serif Display', serif;
+        margin-bottom: 20px;
+        /* &::before{
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: linear-gradient( to bottom, rgba(163,161,255,100%),rgba(201,235,255,80%));
+            border-radius: 50%;
+            z-index: 0;
+        } */
+    }
+    p{
+        z-index: 999;
+        color: #fff;
+    }
+}
+
+.pf_main .case {
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+.pf_main .case .left .top {    
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 100px;
+}
+.pf_main .case .left .top h3{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.pf_main .case .left .top p{
+    font-size: 100px;
+}
+
+.pf_main .case .left .bottom .about{
+    font-size:20px;
+    font-weight: 400;
+}
+
+.pf_main .case .left .bottom .title{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.pf_main .case .left .bottom .about>li~li{
+    margin-bottom: 15px;
+}
+
+.pf_main .case .left .bottom .color{
+    display: flex;
+}
+.pf_main .case .left .bottom .color ol{
+    display: flex;
+    gap: 5px;
+}
+
+.pf_main .case .left .bottom .color li{
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.pf_main .case .left .bottom .color li:first-child{
+    margin-left: 5px;
+}
+
+
+.pf_main .case .left .bottom .link button{
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    box-shadow: 1px 2px 3px #666;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile .w1700{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.profile .w1700 p{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Noto Serif Display', serif;
+}
