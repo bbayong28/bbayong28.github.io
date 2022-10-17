@@ -1,5 +1,5 @@
 const profile = {
-    title :"2023 SHIN’S PORTFOLIO",
+    title :"Front-End Developement",
     name : "shinhwayeong",
     email : "ghkdud5795@naver.com",
     tel : "010-5555-5555"

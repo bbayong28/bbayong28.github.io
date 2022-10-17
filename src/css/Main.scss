@@ -28,13 +28,15 @@ body {
 
     .btn{
         position: fixed;
-        top: 5rem;
-        right: 5rem;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-100%);
         z-index: 1000;
         font-size: 0;
         width: 3rem;
         height: 3rem;
         border: none;
+        background: transparent;
 
         &::before {
             content: "";
@@ -42,6 +44,7 @@ body {
             top: 0.5rem;
             left: 0.5rem;
             right: 0.5rem;
+            width: 4rem;
             height: 2px;
             background: #333;
         }
@@ -52,6 +55,7 @@ body {
             bottom: 0.5rem;
             left: 0.5rem;
             right: 0.5rem;
+            width: 4rem;
             height: 2px;
             background: #333;
         }
@@ -71,6 +75,7 @@ body {
             top: calc(50% - 1px);
             left: 0.5rem;
             right: 0.5rem;
+            width: 4rem;
             height: 2px;
             background: #333;
         }
@@ -148,8 +153,8 @@ body {
 }
 
 .section{
-    font-size: 20px;
-    /* transition: 1s 1s; */
+    /*font-size: 20px;
+     transition: 1s 1s; */
     /* &.active{
         font-size: 20px;
     } */
@@ -158,6 +163,7 @@ body {
 .main{
     position: relative;
     background: #f9f9f9;
+    font-family: 'Noto Serif Display', serif;
     /* background: linear-gradient( to bottom, rgba(255,180,207,70.78%),rgba(247,200,255,100%),rgba(142,88,255,30%),rgba(114,128,255,50%)); */
     .case{
         flex-direction: column;
@@ -172,47 +178,38 @@ body {
     }
     .circle{
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 590px;
+        color: #64c764;
+        font-size: 380px;
+        /* width: 590px;
         height: 590px;
         background: linear-gradient( to bottom, rgba(163,161,255,100%),rgba(201,235,255,80%));
-        border-radius: 50%;
+        border-radius: 50%; */
     }
-    h2{
+    h1{
         position: absolute;
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         z-index: 999;
         color: #333;
         font-size: 120px;
-        text-align: left;
-        line-height: 140px;
-        /* font-family: 'Noto Serif Display', serif; */
+        text-align: center;
+        line-height: 150px;
         margin-bottom: 20px;
-        font-weight: 600;
-        /* &::before{
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            background: linear-gradient( to bottom, rgba(163,161,255,100%),rgba(201,235,255,80%));
-            border-radius: 50%;
-            z-index: 0;
-        } */
+        font-weight: 300;
+        letter-spacing: 3.5px;
     }
     p{       
         position: absolute;
-        top: 53%;
-        left: 42%;
+        bottom: 5%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        color: rgb(26 78 173);
+        color: #333;
         font-weight: 600;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 }
 

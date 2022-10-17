@@ -61,10 +61,8 @@ const Main = () => {
                             <li key={idx} className={it.id === num ? "on" : ""}>
                                 <a href={`#${it.title}`}>{it.name}</a>
                             </li>
-                        )
-                    }
-                    )
-                    }
+                        )}
+                    )}
                 </ul>
             </nav>
             <ReactFullpage
@@ -84,11 +82,20 @@ const Main = () => {
                             <div className="section main">
                                 <div className='case'>
                                     <div className="inner">
-                                        <div className='circle'></div>
-                                        <h2>Hello,<br/>I'm Hwayeong</h2>
-                                        <p>{profile.title}</p>
+                                        <div className='circle'>Hwayeong</div>
+                                        <h1>WELCOME TO MY<br/>PORTFOLIO</h1>
+                                        {/* <p>{profile.title}</p> */}
                                     </div>
                                     
+                                </div>
+                            </div>
+                            <div className="section introduce">
+                                <div className='case'>
+                                    <div className="inner">
+                                        <div className='circle'>Me</div>
+                                        <h2>WELCOME TO MY<br/>PORTFOLIO</h2>
+                                        <p>{profile.title}</p>
+                                    </div>                                    
                                 </div>
                             </div>
                             {
@@ -204,12 +211,12 @@ const Main = () => {
                                                                 <img src={`${process.env.PUBLIC_URL}/img/Rfullpage0${it.id}.png`} alt={it.title} />
                                                             </div>
                                                         </div>
-                                                        <div className="mobile">
+                                                        {/* <div className="mobile">
                                                             <div className='mobile_cover'>
                                                                 <img className='mo_top' src={process.env.PUBLIC_URL + "/img/mobile_top.png"} alt={it.title} />
                                                                 <img className='mo_web' src={`${process.env.PUBLIC_URL}/img/m_Rfullpage0${it.id}.png`} alt={it.title} />
                                                             </div>
-                                                        </div>
+                                                        </div> */}
                                                     </div>
                                                 </div>
                                             </div>

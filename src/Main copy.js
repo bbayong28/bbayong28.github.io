@@ -43,7 +43,7 @@ const Cover = ({ on, setOn }) => {
     )
 }
 
-const Main = () => {
+const Main_copy = () => {
     const [num, setNum] = useState(1);
     const [on, setOn] = useState(false)
     return (
@@ -78,7 +78,7 @@ const Main = () => {
                         <ReactFullpage.Wrapper>
                             <div className="section main">
                                 <div className='case'>
-                                    <div className='circle'></div>
+                                    <div className='circle'>Me</div>
                                     <h2>WELCOME TO MY<br/>PORTFOLIO</h2>
                                     <p>{profile.title}</p>
                                 </div>
@@ -152,4 +152,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main_copy
