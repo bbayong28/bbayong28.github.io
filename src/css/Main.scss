@@ -55,30 +55,30 @@ body {
         }        
         .top,
         .rTop{
-            background-image: url(../../public/img/wave-top-m.png);
+            background-image: url(../../public/img/wave-top.png);
             background-size: 50% 400px;
             animation:move-wave 3s;animation-delay:1s
         }
         .rTop{
-            background-image: url(../../public/img/wave-top-p.png);
+            background-image: url(../../public/img/wave-top-m.png);
         }
         .middle,
         .rMiddle{
-            background-image: url(../../public/img/wave-mid-m.png);
+            background-image: url(../../public/img/wave-mid.png);
             background-size: 60% 520px;
             animation:move_wave 15s linear infinite;
         }  
         .rMiddle{
-            background-image: url(../../public/img/wave-top-p.png);
+            background-image: url(../../public/img/wave-top-m.png);
         }
         .bottom,
         .rBottom{
-            background-image: url(../../public/img/wave-bot-m.png);
+            background-image: url(../../public/img/wave-bot.png);
             background-size: 50% 600px;
             animation:move_wave 20s linear infinite;
         }        
         .rBottom{
-            background-image: url(../../public/img/wave-top-p.png);
+            background-image: url(../../public/img/wave-top-m.png);
         }
     }
     .bgTop{
