@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useRef, useState } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
 import './css/Main.scss';
@@ -43,7 +45,7 @@ const Cover = ({ on, setOn }) => {
     )
 }
 
-const Main = () => {
+const Main_copy = () => {
     const [con, setCon] = useState("cover");
     const [num, setNum] = useState(1);
     const [on, setOn] = useState(false)
@@ -80,11 +82,12 @@ const Main = () => {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section main">
+                               
                                 <div className='case'>
                                     <div className="inner">
-                                        <div className='circle'>Hwayeong</div>
-                                        <h1>WELCOME TO MY<br/>PORTFOLIO</h1>
-                                        {/* <p>{profile.title}</p> */}
+                                        <div className='circle'></div>
+                                        <h1>Hello,<br/>I'm Hwayeong</h1>
+                                        <p>{profile.title}</p>
                                     </div>
                                     
                                 </div>
@@ -92,9 +95,9 @@ const Main = () => {
                             <div className="section introduce">
                                 <div className='case'>
                                     <div className="inner">
-                                        <div className='circle'>Me</div>
-                                        <h2>WELCOME TO MY<br/>PORTFOLIO</h2>
-                                        <p>{profile.title}</p>
+                                        <div className='back'>
+                                            <p>소개페이지</p>
+                                        </div>
                                     </div>                                    
                                 </div>
                             </div>
@@ -102,12 +105,23 @@ const Main = () => {
                                 portfolio.map((it, idx) => {
                                     return (
                                         <div className="section pf_main" >
+                                            <div className="Wrapper bgAnimation">
+                                                <div className="innerWrapper bgTop">
+                                                    <div className='wave top'></div>
+                                                </div>
+                                                <div className="innerWrapper bgMiddle">
+                                                    <div className='wave middle'></div>
+                                                </div>
+                                                <div className="innerWrapper bgBottom">
+                                                    <div className='wave bottom'></div>
+                                                </div>
+                                            </div>
                                             <div className='case'>
                                                 <div className="left">
                                                     <div className="top">
-                                                        <h3>JS,JQUERY<span>PROJECT</span></h3>
+                                                        <h3>PUBLISHING<br/>PROJECT</h3>
                                                         {/* <h3>PUBLISHING<br />PROJECT</h3> */}
-                                                        <p>{`0${it.id}/0${portfolio.length}`}</p>
+                                                        <p>{`0${it.id}`}<span>{`/0${portfolio.length}`}</span></p>
                                                     </div>
                                                     <div className="bottom">
                                                         <ul className="about">
@@ -165,12 +179,23 @@ const Main = () => {
                                 r_portfolio.map((it, idx) => {
                                     return (
                                         <div className="section pf_main" >
+                                            <div className="Wrapper bgAnimation">
+                                                <div className="innerWrapper bgTop">
+                                                    <div className='wave rTop'></div>
+                                                </div>
+                                                <div className="innerWrapper bgMiddle">
+                                                    <div className='wave rMiddle'></div>
+                                                </div>
+                                                <div className="innerWrapper bgBottom">
+                                                    <div className='wave rBottom'></div>
+                                                </div>
+                                            </div>
                                             <div className='case'>
                                                 <div className="left">
                                                     <div className="top">
-                                                        <h3>React<span>PROJECT</span></h3>
+                                                        <h3>PUBLISHING<br/>PROJECT</h3>
                                                         {/* <h3>PUBLISHING<br />PROJECT</h3> */}
-                                                        <p>{`0${it.id}/0${r_portfolio.length}`}</p>
+                                                        <p>{`0${it.id}`}<span>{`/0${portfolio.length}`}</span></p>
                                                     </div>
                                                     <div className="bottom">
                                                         <ul className="about">
@@ -244,4 +269,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main_copy
