@@ -468,3 +468,120 @@ body {
     font-weight: 900;
     font-family: 'Noto Serif Display', serif;
 }
+
+
+/* -----------------------------------------------------contact--------------------------------------------- */
+
+.contact{
+    background: #151515;
+    .oon{        
+        padding: 30px;
+        display: flex;
+            
+        .up{            
+            .left{
+                position: absolute;
+                top: 50px;
+                left: 150px;
+                
+                h2{
+                    font-size: 120px;
+                    font-weight: 900;
+                    text-align: left;
+                    color: #FD3B10;
+                }
+            }
+
+            .right{
+                
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+
+                input[type=text]{
+                    background: #151515;
+                    border: none;
+                    outline: none;
+                    color:#fff;
+                    width: 100%;
+                    padding: 15px 20px;
+                    border-radius: 20px;
+                }
+                .input_box{
+                    border: 5px solid #FD3B10;
+                    border-radius: 20px;                
+                    margin-bottom: 30px;
+                    label{
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    textarea{
+                        background: #151515;
+                        outline: none;
+                        border: none;
+                        color:#fff;  
+                        resize: none;  
+                        padding: 15px 20px;
+                        border-radius: 20px;               
+                    } 
+                }
+                .top{            
+                    display: flex;
+                    justify-content: space-between;
+                    .input_box{
+                        width: 390px;
+                    }
+                }            
+                .input_submit{
+                    border: 5px solid #FD3B10;
+                    border-radius: 20px;
+                    background: #FD3B10;      
+                    input[type=submit]{
+                        border: none;
+                        outline: none;
+                        background: #FD3B10;
+                        color: #fff;
+                        width: 100%;                    
+                        padding: 15px 20px;                        
+                        border-radius: 20px;    
+                    }          
+                }            
+            }
+        }
+        .down{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: left;
+            .top{                
+                padding: 20px 20px;
+                width: 100%;
+                border-top: 1px solid #fff;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                font-size: 25px;
+                font-weight: 700;
+                .right{
+                    display: flex;
+                    gap: 30px;
+                    justify-content: space-evenly;
+                }
+            }
+            .bottom{                    
+                padding: 20px 20px;
+                width: 100%;
+                border-top: 1px solid #fff;
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+
